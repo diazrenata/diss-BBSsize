@@ -11,5 +11,6 @@ It will generate a new MATSS-shaped dataset.
 
 It will need either external data storage (as the target output is the BBS data, but bigger) or for the user to be set up with the MATSS + retriever infrastructure.
 
-I am not sure about permissions/liscensing for generating a new dataset like this, so I think the safe starting point is to make this repository be fore the *code* to go from the BBS data you get from MATSS/retriever, to a version with indivdiual sizes added.
+I am not sure about permissions/liscensing for generating a new dataset like this, so I think the safe starting point is to make this repository be for the *code* to go from the BBS data you get from MATSS/retriever, to a version with indivdiual sizes added. Seed will matter.
+
 
