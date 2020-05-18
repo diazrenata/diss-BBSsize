@@ -1,2 +1,4 @@
 ^BBSsize\.Rproj$
 ^\.Rproj\.user$
+^\species_data
+^\species_data\*
