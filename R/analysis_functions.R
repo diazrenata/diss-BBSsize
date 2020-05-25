@@ -25,7 +25,7 @@ compute_simpson_index <- function(dat)
         message("Skipping...the provided data is not from a community.")
         return(NA)
     }
-    
+
     total <- rowSums(dat$abundance)
     proportions <- sweep(dat$abundance, 1, total, "/")
     proportions_squared <- proportions * proportions
@@ -68,3 +68,19 @@ compute_linear_trend_ts <- function(ts)
 #' @export
 #'
 compute_linear_trend <- MATSS::analysis_wrapper(compute_linear_trend_ts)
+
+
+#' List species
+#'
+#' @param a_dataset matss dataset
+#'
+#' @return list of species names
+#' @export
+#'
+list_species <- function(a_dataset) {
+
+    species_list <- colnames(a_dataset$abundance)
+
+    return(species_list)
+
+}
