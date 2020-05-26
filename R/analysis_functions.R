@@ -79,8 +79,8 @@ compute_linear_trend <- MATSS::analysis_wrapper(compute_linear_trend_ts)
 #'
 list_species <- function(a_dataset) {
 
-    species_list <- colnames(a_dataset$abundance)
+    species_table <- a_dataset$metadata$species_table
 
-    return(species_list)
+    return(as.data.frame(species_table))
 
 }
