@@ -1,0 +1,100 @@
+---
+title: "Size data analysis"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(BBSsize)
+library(drake)
+library(ggplot2)
+```
+
+```{r load a community and species list}
+
+loadd(bbs_rtrg_1_4)
+loadd(sp_mean_size_dat)
+
+```
+
+```{r make community dat long}
+
+long_dat <- bbs_rtrg_1_4$abundance %>%
+  mutate(year = bbs_rtrg_1_4$covariates$year) %>%
+  tidyr::pivot_longer(-year, names_to = "id", values_to = "nind")
+
+```
+
+```{r add sizes}
+
+long_dat <- long_dat %>%
+  left_join(sp_mean_size_dat) %>%
+  select(year, nind, id, mean_mass, mean_sd)
+
+```
+
+```{r simulate individual sizes}
+
+set.seed(1977)
+
+ind_size_dat <- list()
+
+for(i in 1:nrow(long_dat)) {
+  if(long_dat$nind[i] > 0 ) {
+  ind_size_dat[[i]] <- data.frame(
+    year = long_dat$year[i],
+    id = long_dat$id[i],
+    ind_size = rnorm(n = long_dat$nind[i], mean = long_dat$mean_mass[i], sd = long_dat$mean_sd[i]),
+    stringsAsFactors = F
+  )
+  }
+}
+
+ind_size_dat <- bind_rows(ind_size_dat)
+
+
+```
+
+```{r plot for fun}
+
+ggplot(ind_size_dat, aes(x = ind_size)) +
+  geom_density() +
+  theme_bw()+
+  ggtitle("All years")
+
+
+ggplot(ind_size_dat, aes(x = log(ind_size))) +
+  geom_density() +
+  theme_bw()+
+  ggtitle("All years")
+
+
+ggplot(filter(ind_size_dat, year == 1994), aes(x = log(ind_size))) +
+  geom_density() +
+  theme_bw() +
+  ggtitle("One year")
+
+```
+```{r try fxn}
+set.seed(1977)
+
+ind_size_dat2 <- simulate_size_dat(bbs_rtrg_1_4, sp_mean_size_dat)
+
+
+ggplot(ind_size_dat2, aes(x = ind_size)) +
+  geom_density() +
+  theme_bw()+
+  ggtitle("All years")
+
+
+ggplot(ind_size_dat2, aes(x = log(ind_size))) +
+  geom_density() +
+  theme_bw()+
+  ggtitle("All years")
+
+
+ggplot(filter(ind_size_dat2, year == 1994), aes(x = log(ind_size))) +
+  geom_density() +
+  theme_bw() +
+  ggtitle("One year")
+```

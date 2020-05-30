@@ -19,6 +19,8 @@ Imports:
     MATSS (>= 0.3.1),
     rlang,
     rmarkdown,
-    tidyr
+    tidyr,
+    magrittr
 Remotes: 
     weecology/MATSS
+RoxygenNote: 7.1.0

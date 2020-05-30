@@ -12,10 +12,12 @@ expose_imports(BBSsize)
 #  - these are the default options, which don't include downloaded datasets
 datasets <- build_bbs_datasets_plan()
 
-#datasets <- datasets[1:100,]
+datasets <- datasets[1:10,]
+
+set.seed(1977)
 
 ## a Drake plan that defines the methods
-methods <- drake::drake_plan(
+splist_methods <- drake::drake_plan(
     spec = target(list_species(bbs_dat),
                  transform = map(bbs_dat = !!rlang::syms(datasets$target))),
     all_spec = target(list(spec),
@@ -25,15 +27,34 @@ methods <- drake::drake_plan(
     saved_df = target(write.csv(distinct_df, here::here("analysis", "species_data", "species_list.csv"), row.names = F))
 )
 
+sizedat_methods <- drake::drake_plan(
+    raw_size_dat = target(read.csv(here::here("analysis", "species_data", "species_list_working.csv"),  stringsAsFactors = F, strip.white = T, na.strings = "")),
+    clean_size_dat = target(clean_sp_size_data(raw_size_dat)),
+    fitted_pars = target(get_sd_parameters(raw_size_dat)),
+    sd_size_dat = target(add_estimated_sds(clean_size_data = clean_size_dat,
+                                           sd_pars = fitted_pars)),
+    sp_mean_size_dat = target(get_sp_mean_size(sd_size_dat))
+)
 
-## The full workflow
+isd_methods <- drake::drake_plan(
+    isd = target(simulate_size_dat(bbs_dat, mean_size_data = sp_mean_size_dat),
+                 transform = map(bbs_dat = !!rlang::syms(datasets$target)))
+)
+#
+# ## The full workflow
+# workflow <- dplyr::bind_rows(
+#     datasets,
+#     methods
+# )
+
 workflow <- dplyr::bind_rows(
     datasets,
-    methods
+    sizedat_methods,
+    isd_methods
 )
 
 ## Visualize how the targets depend on one another
-if (interactive())
+if (FALSE)
 {
     config <- drake_config(workflow)
     sankey_drake_graph(config, build_times = "none", targets_only = TRUE)  # requires "networkD3" package
