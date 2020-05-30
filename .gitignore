@@ -3,3 +3,4 @@
 ^\species_data\*
 .drake
 .drake\*
+*isd_data*

@@ -19,9 +19,9 @@ set.seed(1977)
 ## a Drake plan that defines the methods
 splist_methods <- drake::drake_plan(
     spec = target(list_species(bbs_dat),
-                 transform = map(bbs_dat = !!rlang::syms(datasets$target))),
+                  transform = map(bbs_dat = !!rlang::syms(datasets$target))),
     all_spec = target(list(spec),
-                     transform = combine(spec)),
+                      transform = combine(spec)),
     species_df = target(dplyr::bind_rows(all_spec)),
     distinct_df = target(dplyr::distinct(species_df)),
     saved_df = target(write.csv(distinct_df, here::here("analysis", "species_data", "species_list.csv"), row.names = F))
@@ -40,6 +40,15 @@ isd_methods <- drake::drake_plan(
     isd = target(simulate_size_dat(bbs_dat, mean_size_data = sp_mean_size_dat),
                  transform = map(bbs_dat = !!rlang::syms(datasets$target)))
 )
+
+isd_names <- as.character(unlist(isd_methods$target))
+
+output_methods <- drake::drake_plan(
+    saved_isd = target(save_isd(an_isd, a_save_name),
+                       transform = map(an_isd = !!rlang::syms(isd_methods$target),
+                                       a_save_name = !!isd_names)
+    )
+)
 #
 # ## The full workflow
 # workflow <- dplyr::bind_rows(
@@ -50,7 +59,8 @@ isd_methods <- drake::drake_plan(
 workflow <- dplyr::bind_rows(
     datasets,
     sizedat_methods,
-    isd_methods
+    isd_methods,
+    output_methods
 )
 
 ## Visualize how the targets depend on one another

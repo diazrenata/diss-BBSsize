@@ -36,3 +36,14 @@ simulate_size_dat <- function(a_dataset, mean_size_data) {
   ind_size_dat <- dplyr::bind_rows(ind_size_dat)
 }
 
+
+#' Save an ISD
+#'
+#' @param isd the isd
+#' @param save_name pass file name
+#'
+#' @return nothing
+#' @export
+save_isd <- function(isd, save_name) {
+  saveRDS(isd, file = here::here("analysis", "isd_data", paste0(save_name, ".Rds")))
+}
