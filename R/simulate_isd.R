@@ -28,8 +28,16 @@ simulate_size_dat <- function(a_dataset, mean_size_data) {
         year = long_dat$year[i],
         id = long_dat$id[i],
         ind_size = rnorm(n = long_dat$nind[i], mean = long_dat$mean_mass[i], sd = long_dat$mean_sd[i]),
-        stringsAsFactors = F
-      )
+        stringsAsFactors = F)
+
+      while(any(ind_size_dat[[i]]$ind_size < 0)) {
+
+        negative_sizes <- which(ind_size_dat[[i]]$ind_size < 0)
+
+        ind_size_dat[[i]]$ind_size[negative_sizes] <-  rnorm(n = length(negative_sizes), mean = long_dat$mean_mass[i], sd = long_dat$mean_sd[i])
+
+      }
+
     }
   }
 

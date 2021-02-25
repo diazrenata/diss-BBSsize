@@ -12,8 +12,19 @@ expose_imports(BBSsize)
 #  - these are the default options, which don't include downloaded datasets
 datasets <- build_bbs_datasets_plan()
 
-datasets <- datasets[1:10,]
+which(grepl(datasets$target, pattern = "rtrg_102_18")) # hartland
+which(grepl(datasets$target, pattern = "rtrg_304_17")) # comanche peak
+which(grepl(datasets$target, pattern = "rtrg_133_6")) # portal BIRDS
+which(grepl(datasets$target, pattern = "rtrg_19_35")) # wabash (salamonie state forest, indiana)
+which(grepl(datasets$target, pattern = "rtrg_172_14")) # moraga (tilden)
+which(grepl(datasets$target, pattern = "rtrg_113_25")) # island grove (micanopy/paynes)
+which(grepl(datasets$target, pattern = "rtrg_63_25")) # ft mccoy (micanopy/paynes)
+which(grepl(datasets$target, pattern = "rtrg_26_59")) # cranbury (princeton)
 
+
+
+#datasets <- datasets[c(1:1000, 861, 1191, 1248, 1584, 1038, 1331, 1311, 2408),]
+datasets <- datasets[c(1:1000, 1191, 1248, 1584, 1038, 1331, 1311, 2408),]
 set.seed(1977)
 
 ## a Drake plan that defines the methods
@@ -43,13 +54,39 @@ isd_methods <- drake::drake_plan(
 
 isd_names <- as.character(unlist(isd_methods$target))
 
-output_methods <- drake::drake_plan(
-    saved_isd = target(save_isd(an_isd, a_save_name),
-                       transform = map(an_isd = !!rlang::syms(isd_methods$target),
-                                       a_save_name = !!isd_names)
-    )
+ibd_methods <- drake::drake_plan(
+    ibd = target(make_ibd(isd),
+                 transform = map(isd = !!rlang::syms(isd_methods$target)))
 )
-#
+
+ibd_names <- as.character(unlist(ibd_methods$target))
+
+
+new_dataset_methods <- drake::drake_plan(
+    size = target(swap_currencies(orig_dat, ibd, currency = "mass"),
+                  transform = map(orig_dat = !!rlang::syms(datasets$target),
+                                  ibd = !!rlang::syms(ibd_names),
+                                  .id = orig_dat)),
+    energy = target(swap_currencies(orig_dat, ibd, currency = "energy"),
+                    transform = map(orig_dat = !!rlang::syms(datasets$target),
+                                    ibd = !!rlang::syms(ibd_names),
+                                    .id = orig_dat))
+)
+
+
+
+newdat_names <- as.character(unlist(new_dataset_methods$target))
+
+output_methods <- drake::drake_plan(
+    saved_newdat = target(save_isd(a_dat, a_save_name),
+                          transform = map(a_dat = !!rlang::syms(new_dataset_methods$target),
+                                          a_save_name = !!newdat_names)
+    ),
+    saved_ibd = target(save_isd(a_dat, a_save_name),
+                       transform = map(a_dat = !!rlang::syms(ibd_methods$target),
+                                       a_save_name = !!ibd_names))
+)
+
 # ## The full workflow
 # workflow <- dplyr::bind_rows(
 #     datasets,
@@ -60,6 +97,8 @@ workflow <- dplyr::bind_rows(
     datasets,
     sizedat_methods,
     isd_methods,
+    ibd_methods,
+    new_dataset_methods,
     output_methods
 )
 
@@ -73,3 +112,4 @@ if (FALSE)
 
 ## Run the workflow
 make(workflow)
+

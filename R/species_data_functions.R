@@ -155,7 +155,7 @@ get_sp_mean_size <- function(sd_dat) {
   sp_means <- sd_dat %>%
     dplyr::group_by(species_id, id, genus, species) %>%
     dplyr::summarize(mean_mass = mean(mass),
-              mean_sd = mean(sd),
+              mean_sd = mean(sd, na.rm = TRUE),
               contains_estimates = any(estimated_sd)) %>%
     dplyr::ungroup()
 
