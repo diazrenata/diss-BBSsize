@@ -4,7 +4,7 @@
 \alias{simulate_size_dat}
 \title{Simulate ISD}
 \usage{
-simulate_size_dat(a_dataset, mean_size_data)
+simulate_size_dat(a_dataset, mean_size_data = NULL)
 }
 \arguments{
 \item{a_dataset}{matss dataset}

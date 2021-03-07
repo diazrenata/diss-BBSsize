@@ -24,7 +24,7 @@ which(grepl(datasets$target, pattern = "rtrg_26_59")) # cranbury (princeton)
 
 
 #datasets <- datasets[c(1:1000, 861, 1191, 1248, 1584, 1038, 1331, 1311, 2408),]
-datasets <- datasets[c(1:1000, 1191, 1248, 1584, 1038, 1331, 1311, 2408),]
+datasets <- datasets[c(1191, 1248, 1584, 1038, 1331, 1311, 2408),]
 set.seed(1977)
 
 ## a Drake plan that defines the methods
@@ -102,13 +102,6 @@ workflow <- dplyr::bind_rows(
     output_methods
 )
 
-## Visualize how the targets depend on one another
-if (FALSE)
-{
-    config <- drake_config(workflow)
-    sankey_drake_graph(config, build_times = "none", targets_only = TRUE)  # requires "networkD3" package
-    vis_drake_graph(config, build_times = "none", targets_only = TRUE)     # requires "visNetwork" package
-}
 
 ## Run the workflow
 make(workflow)

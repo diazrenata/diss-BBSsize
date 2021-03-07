@@ -7,7 +7,12 @@
 #' @export
 #' @importFrom tidyr pivot_longer
 #' @importFrom dplyr mutate left_join select bind_rows
-simulate_size_dat <- function(a_dataset, mean_size_data) {
+#' @importFrom here here
+simulate_size_dat <- function(a_dataset, mean_size_data = NULL) {
+
+  if(is.null(mean_size_data)) {
+    mean_size_data <- read.csv(here::here("analysis", "species_data", "sp_mean_size_dat.csv"))
+  }
 
   # Make long
   long_dat <- a_dataset$abundance %>%
