@@ -32,7 +32,6 @@ get_sd_parameters <- function(raw_size_data) {
     dplyr::mutate(log_m = log(mass),
                   log_var = log(var))
 
-
   sd_fit <- lm(sp_for_sd, formula = log_var ~ log_m)
 
   intercept <- exp(sd_fit$coefficients[[1]])
