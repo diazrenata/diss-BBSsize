@@ -13,5 +13,5 @@ clean_sp_size_data(raw_size_data)
 cleaned data
 }
 \description{
-Clean raw size data
+Updates names of species whose names have changed since 2010.
 }

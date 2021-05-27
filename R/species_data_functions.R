@@ -35,7 +35,7 @@ get_sd_parameters <- function(raw_size_data) {
 
   sd_fit <- lm(sp_for_sd, formula = log_var ~ log_m)
 
-  intercept <- sd_fit$coefficients[[1]]
+  intercept <- exp(sd_fit$coefficients[[1]])
   slope <- sd_fit$coefficient[[2]]
 
   return(list(intercept = intercept,
@@ -57,7 +57,7 @@ estimate_sd <- function(sp_mean, pars = NA) {
 
   if(is.list(pars)) {
 
-    fitted_sd = sqrt(pars$intercept + (pars$slope * sp_mean))
+    fitted_sd = sqrt(pars$intercept * (sp_mean ^ pars$slope))
 
   } else {
 
@@ -69,6 +69,8 @@ estimate_sd <- function(sp_mean, pars = NA) {
 }
 
 #' Clean raw size data
+#'
+#' Updates names of species whose names have changed since 2010.
 #'
 #' @param raw_size_data raw size data
 #'
@@ -155,7 +157,7 @@ get_sp_mean_size <- function(sd_dat) {
   sp_means <- sd_dat %>%
     dplyr::group_by(species_id, id, genus, species) %>%
     dplyr::summarize(mean_mass = mean(mass),
-              mean_sd = mean(sd, na.rm = TRUE),
+              mean_sd = mean(sd, na.rm = F),
               contains_estimates = any(estimated_sd)) %>%
     dplyr::ungroup()
 
