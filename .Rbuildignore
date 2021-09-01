@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^\species_data
 ^\species_data\*
+^data-raw$

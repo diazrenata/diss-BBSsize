@@ -1,62 +1,139 @@
-#' Simulate ISD
+#' Simulate an ISD for a single year
 #'
-#' @param a_dataset matss dataset
-#' @param mean_size_data table of id, sd, mean
+#' Just using the abundances.
 #'
-#' @return long dataframe of timestep, species, and individual size drawn from rnorm
+#' @param abundances long dataframe of `id`, `abundance`, and any other identifying columns (such as `year`)
+#' @param sd_dat optionally pass table with `id`, `mean_mass`, `mean_sd`
+#' @param use_th_pars default FALSE, use Thibault (2010) parameter estiamtes?
+#' @param isd_seed optionally specify seed to use
+#'
+#' @return dataframe with one row per simulated individual, columns `id`, `mass`, `isd_seed`, and any columns in `abundances`
 #' @export
-#' @importFrom tidyr pivot_longer
-#' @importFrom dplyr mutate left_join select bind_rows
-#' @importFrom here here
-simulate_size_dat <- function(a_dataset, mean_size_data = NULL) {
+#'
+#' @importFrom dplyr select distinct mutate left_join bind_rows
+simulate_isd <- function(abundances, sd_dat = NULL, use_th_pars = F, isd_seed = NULL) {
 
-  if(is.null(mean_size_data)) {
-    mean_size_data <- read.csv(here::here("analysis", "species_data", "sp_mean_size_dat.csv"))
+  if(is.null(isd_seed)) {
+    isd_seed = sample.int(100000000, size = 1)
   }
 
-  # Make long
-  long_dat <- a_dataset$abundance %>%
-    dplyr::mutate(year = a_dataset$covariates$year) %>%
-    tidyr::pivot_longer(-year, names_to = "id", values_to = "nind")
+  desc_data <- abundances %>%
+    dplyr::select(-id, -abundance) %>%
+    dplyr::distinct() %>%
+    dplyr::mutate(isd_seed = isd_seed)
 
-  # Add means and sds
-  long_dat <- long_dat %>%
-    dplyr::left_join(mean_size_data) %>%
-    dplyr::select(year, nind, id, mean_mass, mean_sd)
+  abundances <- dplyr::left_join(abundances, sd_dat)
 
+  if(use_th_pars) {
 
-  ind_size_dat <- list()
+    abundances <- abundances %>%
+      dplyr::mutate(mean_sd = mean_sd_th)
 
-  for(i in 1:nrow(long_dat)) {
-    if(long_dat$nind[i] > 0 ) {
-      ind_size_dat[[i]] <- data.frame(
-        year = long_dat$year[i],
-        id = long_dat$id[i],
-        ind_size = rnorm(n = long_dat$nind[i], mean = long_dat$mean_mass[i], sd = long_dat$mean_sd[i]),
+  }
+
+  species_sims <- list()
+
+  set.seed(isd_seed)
+
+  for(i in 1:nrow(abundances)) {
+    if(abundances$abundance[i] > 0 ) {
+      species_sims[[i]] <- data.frame(
+        id = abundances$id[i],
+        mass = rnorm(n = abundances$abundance[i], mean = abundances$mean_mass[i], sd = abundances$mean_sd[i]),
         stringsAsFactors = F)
 
-      while(any(ind_size_dat[[i]]$ind_size < 0)) {
+      while(any(species_sims[[i]]$mass < 0)) {
 
-        negative_sizes <- which(ind_size_dat[[i]]$ind_size < 0)
+        negative_sizes <- which(species_sims[[i]]$mass < 0)
 
-        ind_size_dat[[i]]$ind_size[negative_sizes] <-  rnorm(n = length(negative_sizes), mean = long_dat$mean_mass[i], sd = long_dat$mean_sd[i])
+        species_sims[[i]]$mass[negative_sizes] <-  rnorm(n = length(negative_sizes), mean = abundances$mean_mass[i], sd = abundances$mean_sd[i])
 
       }
 
     }
   }
 
-  ind_size_dat <- dplyr::bind_rows(ind_size_dat)
+  simulated_individuals <- dplyr::bind_rows(species_sims) %>%
+    cbind(desc_data)
+
+  return(simulated_individuals)
 }
 
-
-#' Save an ISD
+#' Simulate ISD data for a timeseries
 #'
-#' @param isd the isd
-#' @param save_name pass file name
+#' For one year or all years.
 #'
-#' @return nothing
+#' @param dataset list of `abundance`, `covariates`, `metadata`. See `MATSS`.
+#' @param sd_dat optional, provide a dataframe with `id`, `mean_mass`, `mean_sd`
+#' @param censusyears optional, specify the year to simulate for. If not provided simulates for all years.
+#' @param use_th_pars default F, use Thibault (2010) scaling parameters or re-estimated ones?
+#' @param isd_seed optionally specify the seed to use when simulating the ISDs. If not provided one will be chosen and returned with output.
+#'
+#' @return list of `isd`, `covariates`, `metadata`
 #' @export
-save_isd <- function(isd, save_name) {
-  saveRDS(isd, file = here::here("analysis", "isd_data", paste0(save_name, ".Rds")))
+#'
+#' @importFrom dplyr mutate filter bind_rows
+#' @importFrom tidyr pivot_longer
+simulate_isd_ts <- function(dataset, sd_dat = NULL, censusyears = NULL, use_th_pars = F, isd_seed = NULL) {
+
+  if(is.null(sd_dat)) {
+    sd_dat = sd_table
+  }
+
+  abundances_long <- dataset$abundance %>%
+    dplyr::mutate(year = dataset$covariates$year) %>%
+    tidyr::pivot_longer(-year, names_to = "id", values_to = "abundance")
+
+  if(!is.null(censusyears)) {
+    abundances_long <- dplyr::filter(abundances_long, year %in% censusyears)
+  }
+
+  annual_isds <- list()
+
+  for(i in 1:length(unique(abundances_long$year))) {
+
+    thisyear_abunds <- dplyr::filter(abundances_long,
+                                     year == unique(abundances_long$year)[i])
+
+    annual_isds[[i]] <- simulate_isd(abundances = thisyear_abunds,
+                                    sd_dat = sd_dat,
+                                    use_th_pars = use_th_pars,
+                                    isd_seed = isd_seed)
+
+  }
+
+  all_annual_isds <- dplyr::bind_rows(annual_isds)
+
+  return(list(
+    isd = all_annual_isds,
+    covariates = dataset$covariates,
+    metadata = dataset$metadata
+  ))
+}
+
+#' Simulate the ISD for a BBS route
+#'
+#' Assumes MATSS is installed and working.
+#'
+#' Uses `MATSS::get_bbs_route_region_data` to pull in a dataset and then simulates the ISD for a given year, or all years, for that dataset. Assumes MATSS is installed and working and `MATSS::prepare_bbs_data` has already run.
+#'
+#' @param route which route
+#' @param region which region
+#' @param sd_dat optional, provide dataframe with `id`, `mean_mass`, and `mean_sd`
+#' @param censusyears optional, provide a censusyear or years to use. If not provided returns for all years
+#' @param use_th_pars default FALSE, whether to use sds estimated with Thibault (2010) parameters. Values are very close.
+#' @param isd_seed optional, seed to use when simulating the ISD. If not provided, a seed is randomly chosen and returned with the simulated ISDs.
+#'
+#' @return list of `isd`, `covariates`, and `metadata`
+#' @export
+#'
+#' @importFrom MATSS get_bbs_route_region_data
+simulate_isd_route <- function(route, region, sd_dat = NULL, censusyears = NULL, use_th_pars = F, isd_seed = NULL) {
+
+  routedat <- MATSS::get_bbs_route_region_data(route = route, region = region)
+
+  sim_isd <- simulate_isd_ts(dataset = routedat, sd_dat = sd_dat, censusyears = censusyears, use_th_pars = use_th_pars, isd_seed = isd_seed)
+
+  return(sim_isd)
+
 }
