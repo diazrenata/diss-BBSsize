@@ -3,19 +3,6 @@ title: "Size data analysis"
 output: github_document
 ---
 
-```{r setup, include=FALSE}
-library(dplyr)
-library(BBSsize)
-library(drake)
-library(ggplot2)
-```
-
-```{r load an isd}
-
-loadd(isd_bbs_rtrg_1_4)
-
-```
-
 Following Fristoe (2015, GEB https://onlinelibrary.wiley.com/doi/epdf/10.1111/geb.12262): 
 
 $B = cM^b$ 
@@ -24,15 +11,3 @@ where M is body mass
 
 "I use values provided from empirical studies for passerine birds under natural condi-
 tions of c = 10.5... and b = 0.713 (Nagy, 2005; McNab, 2009)."
-
-```{r add energy}
-
-estimate_b <- function(body_mass) {
-  return(10.5 * (body_mass ^ .713))
-}
-
-isd_bbs_rtrg_1_4 <- isd_bbs_rtrg_1_4 %>%
-  mutate(ind_b = estimate_b(ind_size))
-
-
-```

@@ -80,8 +80,6 @@ for(i in 1:nrow(sp_clean)) {
 }
 ```
 
-    ## Warning in sqrt(pars$intercept + (pars$slope * sp_mean)): NaNs produced
-
 ``` r
 sp_means <- sp_clean %>%
   group_by(species_id, id, genus, species) %>%
@@ -89,14 +87,15 @@ sp_means <- sp_clean %>%
             mean_sd = mean(sd),
             contains_estimates = any(estimated_sd)) %>%
   ungroup()
+```
 
+    ## `summarise()` has grouped output by 'species_id', 'id', 'genus'. You can override using the `.groups` argument.
 
+``` r
 ggplot(sp_means, aes(x = log(mean_mass), y = log(mean_sd), color = contains_estimates)) +
   geom_point() +
   theme_bw()
 ```
-
-    ## Warning: Removed 1 rows containing missing values (geom_point).
 
 ![](extrapolate_sp_data_files/figure-gfm/take%20mean%20by%20species%20ID-1.png)<!-- -->
 
