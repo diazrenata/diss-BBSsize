@@ -5,55 +5,10 @@ Size data analysis
 sp_raw <- read.csv(here::here("analysis", "species_data", "species_list_working.csv"), stringsAsFactors = F, strip.white = T, na.strings = "")
 ```
 
-### Data cleanup
-
-Trivial:
-
-  - remove common names columns (special characters get messed up in
-    Excel)
-  - rename `species_id` column (got messed up in excel)
-
-Some substance:
-
-  - For species that have been split, fill in values
-
-<!-- end list -->
-
-``` r
-colnames(sp_raw)[1] <- "species_id"
-
-sp_clean <- sp_raw %>%
-  select(-english_common_name, -french_common_name, -spanish_common_name, -sporder, -family) 
-
-name_change <- filter(sp_clean, not_in_dunning == 1)
-
-sp_clean <- filter(sp_clean, is.na(not_in_dunning)) %>%
-  mutate(added_flag = NA)
-
-for(i in 1:nrow(name_change)) {
-    
-  if(!is.na(name_change$close_subspecies[i])) {
-  matched_rows <- filter(sp_clean,
-                         genus == name_change$close_genus[i],
-                         species == name_change$close_species[i],
-                         subspecies == name_change$close_subspecies[i])
-  } else {
-    matched_rows <- filter(sp_clean,
-                         genus == name_change$close_genus[i],
-                         species == name_change$close_species[i])
-  }
-  
-  sp_to_add <- matched_rows %>%
-    mutate(species_id = name_change$species_id[i],
-           id = name_change$id[i],
-           added_flag = 1)
-  
-  sp_clean <- bind_rows(sp_clean, sp_to_add)
-  
-}
-```
-
 ### SD fit
+
+Black line of fit is parameters as estimated from a lm fit to this data;
+blue line is using the parameters from Thibault (2011).
 
 ``` r
 sp_for_sd <- filter(sp_raw,
@@ -92,13 +47,16 @@ summary(sd_fit)
 ``` r
 sp_for_sd <- mutate(sp_for_sd,
                     log_var_est = -5.273 + (log_m * 1.995)) %>%
-  mutate(var_est = exp(log_var_est))
+  mutate(var_est = exp(log_var_est),
+         t_var_est = .0055 * (mass ^ 1.98)) %>%
+  mutate(log_t_var_est = log(t_var_est))
 
 
 ggplot(sp_for_sd, aes(x = log_m, y = log_var)) +
   geom_point(alpha = .4) +
   theme_bw() +
-  geom_line(aes(x = log_m, y = log_var_est))
+  geom_line(aes(x = log_m, y = log_var_est)) +
+  geom_line(aes(x = log_m, y = log_t_var_est), color = "blue")
 ```
 
 ![](sd_relationship_files/figure-gfm/fit%20sd-1.png)<!-- -->
@@ -107,7 +65,8 @@ ggplot(sp_for_sd, aes(x = log_m, y = log_var)) +
 ggplot(sp_for_sd, aes(x = mass, y = var)) +
   geom_point(alpha = .4) +
   theme_bw() +
-  geom_line(aes(x = mass, y = var_est))
+  geom_line(aes(x = mass, y = var_est)) +
+  geom_line(aes(x = mass, y = t_var_est), color = "blue")
 ```
 
 ![](sd_relationship_files/figure-gfm/fit%20sd-2.png)<!-- -->
