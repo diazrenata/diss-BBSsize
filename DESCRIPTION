@@ -1,5 +1,5 @@
 Package: BBSsize
-Title: What the Package Does (One Line, Title Case)
+Title: Simulate body masses for BBS routes.
 Version: 0.0.0.9000
 Authors@R: c(
     person(c("Renata", "M."), "Diaz",
