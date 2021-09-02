@@ -18,11 +18,12 @@ test_that("single year works", {
 
 test_that("isds reproduce", {
 
+h_isd <- simulate_isd_ts(h, isd_seed = 2021)
 
   # If isd_seed is held the same, you should always get the same ISD
   for(i in 1:10) {
 
-    h_isd2 <- BBSsize::simulate_isd_ts(h, isd_seed = 2021)
+    h_isd2 <- simulate_isd_ts(h, isd_seed = 2021)
 
     expect_true(dplyr::all_equal(h_isd$isd, h_isd2$isd))
 
@@ -31,7 +32,7 @@ test_that("isds reproduce", {
   # If the isd_seed changes, you should get differences.
   for(i in 1:10) {
 
-    h_isd2 <- BBSsize::simulate_isd_ts(h, isd_seed = 2021 + i)
+    h_isd2 <- simulate_isd_ts(h, isd_seed = 2021 + i)
 
     expect_false(all(h_isd$isd$mass == h_isd2$isd$mass))
     expect_true(all(h_isd$isd$id == h_isd2$isd$id))
