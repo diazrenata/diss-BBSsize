@@ -7,3 +7,10 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^\analysis
+^\analysis\*
+^analysis
+^.github
+^.github\*
+^dat_to_include
+^dat_to_include\*
