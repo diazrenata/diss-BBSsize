@@ -3,3 +3,7 @@
 ^\species_data
 ^\species_data\*
 ^data-raw$
+^LICENSE\.md$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
