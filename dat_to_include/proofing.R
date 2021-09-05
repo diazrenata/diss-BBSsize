@@ -57,3 +57,20 @@ for(i in 1:nrow(first)) {
   }
 
 }
+
+
+for(i in 1:nrow(first)) {
+
+  if(!(all_equal(first[i,],second[i,]))) {
+
+    print(i)
+    break()
+  }
+
+}
+
+first[i,]
+second[i,]
+which(first[i,] != second[i,])
+
+all_equal(first, second)

@@ -5,21 +5,21 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 77,sp3110,Plain Chachalaca,Ortalide chacamel,Ortalis vetula,Galliformes,Cracidae,Ortalis,vetula,542,52,f,NA,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
 77,sp3110,Plain Chachalaca,Ortalide chacamel,Ortalis vetula,Galliformes,Cracidae,Ortalis,vetula,584,58,m,NA,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
 85,sp2920,Mountain Quail,Colin des montagnes,Oreortyx pictus,Galliformes,Odontophoridae,Oreortyx,pictus,233,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-90,sp2890,Northern Bobwhite,Colin de Virginie,Colinus virginianus,Galliformes,Odontophoridae,Colinus,virginianus,166,NA,NA,NA,"Sonora, Mexico",NA,NA,NA,NA,NA,NA,NA
+90,sp2890,Northern Bobwhite,Colin de Virginie,Colinus virginianus,Galliformes,Odontophoridae,Colinus,virginianus,166,NA,NA,ridgwayi,"Sonora, Mexico",NA,NA,NA,NA,NA,NA,NA
 90,sp2890,Northern Bobwhite,Colin de Virginie,Colinus virginianus,Galliformes,Odontophoridae,Colinus,virginianus,178,NA,NA,NA,"Illinois, USA",NA,NA,NA,NA,NA,NA,NA
 92,sp2930,Scaled Quail,Colin écaillé,Callipepla squamata,Galliformes,Odontophoridae,Callipepla,squamata,177,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 92,sp2930,Scaled Quail,Colin écaillé,Callipepla squamata,Galliformes,Odontophoridae,Callipepla,squamata,191,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
-94,sp2940,California Quail,Colin de Californie,Callipepla californica,Galliformes,Odontophoridae,Callipepla,californica,151,NA,NA,NA,"Baja California Sur, Mexico",NA,NA,NA,NA,NA,NA,NA
-94,sp2940,California Quail,Colin de Californie,Callipepla californica,Galliformes,Odontophoridae,Callipepla,californica,162,16.5,f,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
-94,sp2940,California Quail,Colin de Californie,Callipepla californica,Galliformes,Odontophoridae,Callipepla,californica,186,15.7,m,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
+94,sp2940,California Quail,Colin de Californie,Callipepla californica,Galliformes,Odontophoridae,Callipepla,californica,151,NA,NA,achrustera,"Baja California Sur, Mexico",NA,NA,NA,NA,NA,NA,NA
+94,sp2940,California Quail,Colin de Californie,Callipepla californica,Galliformes,Odontophoridae,Callipepla,californica,162,16.5,f,californica,"California, USA",NA,NA,NA,NA,NA,NA,NA
+94,sp2940,California Quail,Colin de Californie,Callipepla californica,Galliformes,Odontophoridae,Callipepla,californica,186,15.7,m,californica,"California, USA",NA,NA,NA,NA,NA,NA,NA
 95,sp2950,Gambel's Quail,Colin de Gambel,Callipepla gambelii,Galliformes,Odontophoridae,Callipepla,gambelii,162,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 95,sp2950,Gambel's Quail,Colin de Gambel,Callipepla gambelii,Galliformes,Odontophoridae,Callipepla,gambelii,170,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
 96,sp2960,Montezuma Quail,Colin arlequin,Cyrtonyx montezumae,Galliformes,Odontophoridae,Cyrtonyx,montezumae,179,19.5,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 96,sp2960,Montezuma Quail,Colin arlequin,Cyrtonyx montezumae,Galliformes,Odontophoridae,Cyrtonyx,montezumae,192,14.2,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
-100,sp2882,Chukar,Perdrix choukar,Alectoris chukar,Galliformes,Phasianidae,Alectoris,chukar,466,NA,f,NA,"Hopei, China",1,Alectoris chukar pubescens,NA,NA,NA,NA,NA
-100,sp2882,Chukar,Perdrix choukar,Alectoris chukar,Galliformes,Phasianidae,Alectoris,chukar,541,NA,m,NA,"Hopei, China",1,Alectoris chukar pubescens,NA,NA,NA,NA,NA
-103,sp2881,Gray Partridge,Perdrix grise,Perdix perdix,Galliformes,Phasianidae,Perdix,perdix,393,34,f,NA,"North Dakota, US",NA,NA,NA,NA,NA,NA,NA
-103,sp2881,Gray Partridge,Perdrix grise,Perdix perdix,Galliformes,Phasianidae,Perdix,perdix,418,28,m,NA,"North Dakota, US",NA,NA,NA,NA,NA,NA,NA
+100,sp2882,Chukar,Perdrix choukar,Alectoris chukar,Galliformes,Phasianidae,Alectoris,chukar,466,NA,f,pubescens,"Hopei, China",NA,NA,NA,NA,NA,NA,NA
+100,sp2882,Chukar,Perdrix choukar,Alectoris chukar,Galliformes,Phasianidae,Alectoris,chukar,541,NA,m,pubescens,"Hopei, China",NA,NA,NA,NA,NA,NA,NA
+103,sp2881,Gray Partridge,Perdrix grise,Perdix perdix,Galliformes,Phasianidae,Perdix,perdix,393,34,f,NA,"North Dakota, USA",NA,NA,NA,NA,NA,NA,NA
+103,sp2881,Gray Partridge,Perdrix grise,Perdix perdix,Galliformes,Phasianidae,Perdix,perdix,418,28,m,NA,"North Dakota, USA",NA,NA,NA,NA,NA,NA,NA
 104,sp3091,Ring-necked Pheasant,Faisan de Colchide,Phasianus colchicus,Galliformes,Phasianidae,Phasianus,colchicus,953,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 104,sp3091,Ring-necked Pheasant,Faisan de Colchide,Phasianus colchicus,Galliformes,Phasianidae,Phasianus,colchicus,1317,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
 105,sp3095,Indian Peafowl,Paon bleu,Pavo cristatus,Galliformes,Phasianidae,Pavo,cristatus,3622,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -50,12 +50,12 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 114,sp2971,Sooty Grouse,Tétras fuligineux,Dendragapus fuliginosus,Galliformes,Phasianidae,Dendragapus,fuliginosus,1273,87.8,m,NA,"British Columbia, Canada",NA,NA,NA,NA,NA,NA,NA
 116,sp3080,Sharp-tailed Grouse,Tétras à queue fine,Tympanuchus phasianellus,Galliformes,Phasianidae,Tympanuchus,phasianellus,817,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 116,sp3080,Sharp-tailed Grouse,Tétras à queue fine,Tympanuchus phasianellus,Galliformes,Phasianidae,Tympanuchus,phasianellus,953,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
-117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,730,,f,attwateri,"Texas, USA",,,,,,,
+117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,730,NA,f,attwateri,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
 117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,795,NA,f,pinnatus,"Kansas, USA",NA,NA,NA,NA,NA,NA,NA
-117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,813,,f,cupido,"Massachusetts, USA",,,,,,,
+117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,813,NA,f,cupido,"Massachusetts, USA",NA,NA,NA,NA,NA,NA,NA
 117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,933,NA,m,pinnatus,"Kansas, USA",NA,NA,NA,NA,NA,NA,NA
-117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,972,,m,cupido,"Massachusetts, USA",,,,,,,
-117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,1014,,m,attwateri,"Texas, USA",,,,,,,
+117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,972,NA,m,cupido,"Massachusetts, USA",NA,NA,NA,NA,NA,NA,NA
+117,sp3050,Greater Prairie-Chicken,Tétras des prairies,Tympanuchus cupido,Galliformes,Phasianidae,Tympanuchus,cupido,1014,NA,m,attwateri,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
 118,sp3070,Lesser Prairie-Chicken,Tétras pâle,Tympanuchus pallidicinctus,Galliformes,Phasianidae,Tympanuchus,pallidicinctus,730,NA,f,NA,"Colorado, USA",NA,NA,NA,NA,NA,NA,NA
 118,sp3070,Lesser Prairie-Chicken,Tétras pâle,Tympanuchus pallidicinctus,Galliformes,Phasianidae,Tympanuchus,pallidicinctus,762,NA,m,NA,"Colorado, USA",NA,NA,NA,NA,NA,NA,NA
 119,sp3100,Wild Turkey,Dindon sauvage,Meleagris gallopavo,Galliformes,Phasianidae,Meleagris,gallopavo,4300,NA,f,silvestris,"New York, USA",NA,NA,NA,NA,NA,NA,NA
@@ -63,7 +63,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 130,sp3131,Rock Pigeon,Pigeon biset,Columba livia,Columbiformes,Columbidae,Columba,livia,340,34.7,f,NA,"Kansas, USA",NA,NA,NA,NA,NA,NA,NA
 130,sp3131,Rock Pigeon,Pigeon biset,Columba livia,Columbiformes,Columbidae,Columba,livia,369,38.6,m,NA,"Kansas, USA",NA,NA,NA,NA,NA,NA,NA
 134,sp3140,White-crowned Pigeon,Pigeon à couronne blanche,Patagioenas leucocephala,Columbiformes,Columbidae,Patagioenas,leucocephala,230,14,f,NA,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
-134,sp3140,White-crowned Pigeon,Pigeon à couronne blanche,Patagioenas leucocephala,Columbiformes,Columbidae,Patagioenas,leucocephala,238,,NA,NA,Cuba,NA,NA,NA,NA,NA,NA,NA
+134,sp3140,White-crowned Pigeon,Pigeon à couronne blanche,Patagioenas leucocephala,Columbiformes,Columbidae,Patagioenas,leucocephala,238,NA,NA,NA,Cuba,NA,NA,NA,NA,NA,NA,NA
 134,sp3140,White-crowned Pigeon,Pigeon à couronne blanche,Patagioenas leucocephala,Columbiformes,Columbidae,Patagioenas,leucocephala,253,31,m,NA,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
 135,sp3130,Red-billed Pigeon,Pigeon à bec rouge,Patagioenas flavirostris,Columbiformes,Columbidae,Patagioenas,flavirostris,261,31.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 135,sp3130,Red-billed Pigeon,Pigeon à bec rouge,Patagioenas flavirostris,Columbiformes,Columbidae,Patagioenas,flavirostris,281,NA,NA,NA,"Tres Marias Is., Mexico",NA,NA,NA,NA,NA,NA,NA
@@ -124,20 +124,20 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 236,sp4300,Costa's Hummingbird,Colibri de Costa,Calypte costae,Apodiformes,Trochilidae,Calypte,costae,3,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
 236,sp4300,Costa's Hummingbird,Colibri de Costa,Calypte costae,Apodiformes,Trochilidae,Calypte,costae,3.2,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 239,sp4320,Broad-tailed Hummingbird,Colibri à queue large,Selasphorus platycercus,Apodiformes,Trochilidae,Selasphorus,platycercus,3.5,0.3,m,NA,"Colorado, USA",NA,NA,NA,NA,NA,NA,NA
-239,sp4320,Broad-tailed Hummingbird,Colibri à queue large,Selasphorus platycercus,Apodiformes,Trochilidae,Selasphorus,platycercus,3.6,0.4,NA,NA,"Colorado, USA",NA,NA,NA,NA,NA,NA,NA
+239,sp4320,Broad-tailed Hummingbird,Colibri à queue large,Selasphorus platycercus,Apodiformes,Trochilidae,Selasphorus,platycercus,3.6,0.4,f,NA,"Colorado, USA",NA,NA,NA,NA,NA,NA,NA
 240,sp4330,Rufous Hummingbird,Colibri roux,Selasphorus rufus,Apodiformes,Trochilidae,Selasphorus,rufus,3.5,NA,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 241,sp4340,Allen's Hummingbird,Colibri d'Allen,Selasphorus sasin,Apodiformes,Trochilidae,Selasphorus,sasin,3.1,NA,m,sasin,NA,NA,NA,NA,NA,NA,NA,NA
 241,sp4340,Allen's Hummingbird,Colibri d'Allen,Selasphorus sasin,Apodiformes,Trochilidae,Selasphorus,sasin,3.2,NA,f,sasin,NA,NA,NA,NA,NA,NA,NA,NA
-241,sp4340,Allen's Hummingbird,Colibri d'Allen,Selasphorus sasin,Apodiformes,Trochilidae,Selasphorus,sasin,3.5,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
-241,sp4340,Allen's Hummingbird,Colibri d'Allen,Selasphorus sasin,Apodiformes,Trochilidae,Selasphorus,sasin,3.7,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
+241,sp4340,Allen's Hummingbird,Colibri d'Allen,Selasphorus sasin,Apodiformes,Trochilidae,Selasphorus,sasin,3.5,NA,m,sedentarius,NA,NA,NA,NA,NA,NA,NA,NA
+241,sp4340,Allen's Hummingbird,Colibri d'Allen,Selasphorus sasin,Apodiformes,Trochilidae,Selasphorus,sasin,3.7,NA,f,sedentarius,NA,NA,NA,NA,NA,NA,NA,NA
 244,sp4360,Calliope Hummingbird,Colibri calliope,Selasphorus calliope,Apodiformes,Trochilidae,Selasphorus,calliope,2.5,NA,m,NA,NA,1,Stellula callipoe,NA,NA,NA,NA,NA
 244,sp4360,Calliope Hummingbird,Colibri calliope,Selasphorus calliope,Apodiformes,Trochilidae,Selasphorus,calliope,2.8,NA,f,NA,NA,1,Stellula callipoe,NA,NA,NA,NA,NA
 249,sp4410,Broad-billed Hummingbird,Colibri circé,Cynanthus latirostris,Apodiformes,Trochilidae,Cynanthus,latirostris,3.1,0.4,NA,NA,Western Mexico,NA,NA,NA,NA,NA,NA,NA
 265,sp4390,Buff-bellied Hummingbird,Ariane du Yucatan,Amazilia yucatanensis,Apodiformes,Trochilidae,Amazilia,yucatanensis,3.7,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 265,sp4390,Buff-bellied Hummingbird,Ariane du Yucatan,Amazilia yucatanensis,Apodiformes,Trochilidae,Amazilia,yucatanensis,4.1,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
 267,sp4391,Violet-crowned Hummingbird,Ariane à couronne violette,Amazilia violiceps,Apodiformes,Trochilidae,Amazilia,violiceps,5.1,0.4,NA,NA,"Arizona, USA",1,Agyrtria violiceps,NA,NA,NA,NA,NA
-611,sp3260,Black Vulture,Urubu noir,Coragyps atratus,Cathartiformes,Cathartidae,Coragyps,atratus,1640,100,NA,NA,Venezuela,NA,NA,NA,NA,NA,NA,NA
-611,sp3260,Black Vulture,Urubu noir,Coragyps atratus,Cathartiformes,Cathartidae,Coragyps,atratus,2159,130,NA,NA,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
+611,sp3260,Black Vulture,Urubu noir,Coragyps atratus,Cathartiformes,Cathartidae,Coragyps,atratus,1640,100,NA,brasiliensis,Venezuela,NA,NA,NA,NA,NA,NA,NA
+611,sp3260,Black Vulture,Urubu noir,Coragyps atratus,Cathartiformes,Cathartidae,Coragyps,atratus,2159,130,NA,atratus,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
 612,sp3250,Turkey Vulture,Urubu à tête rouge,Cathartes aura,Cathartiformes,Cathartidae,Cathartes,aura,1220,80.6,NA,ruficollis,Venezuela,NA,NA,NA,NA,NA,NA,NA
 612,sp3250,Turkey Vulture,Urubu à tête rouge,Cathartes aura,Cathartiformes,Cathartidae,Cathartes,aura,1430,228,NA,meridionalis,Venezuela,NA,NA,NA,NA,NA,NA,NA
 612,sp3250,Turkey Vulture,Urubu à tête rouge,Cathartes aura,Cathartiformes,Cathartidae,Cathartes,aura,2006,NA,NA,septentrionalis,"Southern Florida, USA",NA,NA,NA,NA,NA,NA,NA
@@ -152,22 +152,22 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 621,sp3270,Swallow-tailed Kite,Naucler à queue fourchue,Elanoides forficatus,Accipitriformes,Accipitridae,Elanoides,forficatus,442,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 624,sp3490,Golden Eagle,Aigle royal,Aquila chrysaetos,Accipitriformes,Accipitridae,Aquila,chrysaetos,3900,335,m,NA,"Idaho, USA",NA,NA,NA,NA,NA,NA,NA
 624,sp3490,Golden Eagle,Aigle royal,Aquila chrysaetos,Accipitriformes,Accipitridae,Aquila,chrysaetos,4627,420,f,NA,"Idaho, USA",NA,NA,NA,NA,NA,NA,NA
-629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,300,NA,m,NA,Northern China,1,Circus cyaneus cyaneus,NA,NA,NA,NA,NA
-629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,359,39.9,m,NA,"New Jersey, USA",1,Circus cynaeus hudsonius,NA,NA,NA,NA,NA
-629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,430,NA,f,NA,Northern China,1,Circus cyaneus cyaneus,NA,NA,NA,NA,NA
-629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,515,54.6,f,NA,"New Jersey, USA",1,Circus cynaeus hudsonius,NA,NA,NA,NA,NA
+629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,300,NA,m,cyaneus,Northern China,1,Circus cyaneus cyaneus,NA,NA,NA,NA,NA
+629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,359,39.9,m,hudsonius,"New Jersey, USA",1,Circus cyaneus hudsonius,NA,NA,NA,NA,NA
+629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,430,NA,f,cyaneus,Northern China,1,Circus cyaneus cyaneus,NA,NA,NA,NA,NA
+629,sp3310,Northern Harrier,Busard des marais,Circus hudsonius,Accipitriformes,Accipitridae,Circus,hudsonius,515,54.6,f,hudsonius,"New Jersey, USA",1,Circus cyaneus hudsonius,NA,NA,NA,NA,NA
 631,sp3320,Sharp-shinned Hawk,Épervier brun,Accipiter striatus,Accipitriformes,Accipitridae,Accipiter,striatus,94.9,NA,m,venator,Puerto Rico,NA,NA,NA,NA,NA,NA,NA
 631,sp3320,Sharp-shinned Hawk,Épervier brun,Accipiter striatus,Accipitriformes,Accipitridae,Accipiter,striatus,103,6.4,m,NA,"Wisconsin, USA",NA,NA,NA,NA,NA,NA,NA
 631,sp3320,Sharp-shinned Hawk,Épervier brun,Accipiter striatus,Accipitriformes,Accipitridae,Accipiter,striatus,171,NA,f,venator,Puerto Rico,NA,NA,NA,NA,NA,NA,NA
 631,sp3320,Sharp-shinned Hawk,Épervier brun,Accipiter striatus,Accipitriformes,Accipitridae,Accipiter,striatus,174,10.4,f,NA,"Wisconsin, USA",NA,NA,NA,NA,NA,NA,NA
 632,sp3330,Cooper's Hawk,Épervier de Cooper,Accipiter cooperii,Accipitriformes,Accipitridae,Accipiter,cooperii,349,19.6,m,NA,"Wisconsin, USA",NA,NA,NA,NA,NA,NA,NA
 632,sp3330,Cooper's Hawk,Épervier de Cooper,Accipiter cooperii,Accipitriformes,Accipitridae,Accipiter,cooperii,529,36.1,f,NA,"Wisconsin, USA",NA,NA,NA,NA,NA,NA,NA
-634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,501,NA,m,schvendowi,"Hopei, China",NA,NA,NA,NA,NA,NA,NA
+634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,501,NA,m,schvedowi,"Hopei, China",NA,NA,NA,NA,NA,NA,NA
 634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,704,32.7,m,apache,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,912,14.9,m,NA,"Wisconsin, USA",NA,NA,NA,NA,NA,NA,NA
 634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,986,51.9,f,apache,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,1137,18.6,f,NA,"Wisconsin, USA",NA,NA,NA,NA,NA,NA,NA
-634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,1170,NA,f,schvendowi,"Hopei, China",NA,NA,NA,NA,NA,NA,NA
+634,sp3340,Northern Goshawk,Autour des palombes,Accipiter gentilis,Accipitriformes,Accipitridae,Accipiter,gentilis,1170,NA,f,schvedowi,"Hopei, China",NA,NA,NA,NA,NA,NA,NA
 637,sp3520,Bald Eagle,Pygargue à tête blanche,Haliaeetus leucocephalus,Accipitriformes,Accipitridae,Haliaeetus,leucocephalus,4130,NA,m,NA,"Alaska, USA",NA,NA,NA,NA,NA,NA,NA
 637,sp3520,Bald Eagle,Pygargue à tête blanche,Haliaeetus leucocephalus,Accipitriformes,Accipitridae,Haliaeetus,leucocephalus,5350,NA,f,NA,"Alaska, USA",NA,NA,NA,NA,NA,NA,NA
 640,sp3290,Mississippi Kite,Milan du Mississippi,Ictinia mississippiensis,Accipitriformes,Accipitridae,Ictinia,mississippiensis,245,NA,m,NA,"Oklahoma, USA",NA,NA,NA,NA,NA,NA,NA
@@ -240,20 +240,20 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 749,sp3950,Red-cockaded Woodpecker,Pic à face blanche,Dryobates borealis,Piciformes,Picidae,Dryobates,borealis,47.4,8.4,f,NA,"North Carolina, USA",1,Picoides borealis,NA,NA,NA,NA,NA
 749,sp3950,Red-cockaded Woodpecker,Pic à face blanche,Dryobates borealis,Piciformes,Picidae,Dryobates,borealis,48.6,6.8,m,NA,"North Carolina, USA",1,Picoides borealis,NA,NA,NA,NA,NA
 750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,51.7,NA,NA,NA,Bahamas,1,Picoides villosus,NA,NA,NA,NA,NA
-750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,52.4,2.8,NA,NA,"Baja California, Mexico",1,Picoides villosus,NA,NA,NA,NA,NA
+750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,52.4,2.8,f,NA,"Baja California, Mexico",1,Picoides villosus,NA,NA,NA,NA,NA
 750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,60,2.9,m,NA,"Baja California, Mexico",1,Picoides villosus,NA,NA,NA,NA,NA
 750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,62.5,2,f,NA,"Pennsylvania, USA",1,Picoides villosus,NA,NA,NA,NA,NA
 750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,67.5,4.7,f,NA,"Montana, USA",1,Picoides villosus,NA,NA,NA,NA,NA
 750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,70,3.2,m,NA,"Pennsylvania, USA",1,Picoides villosus,NA,NA,NA,NA,NA
 750,sp3930,Hairy Woodpecker,Pic chevelu,Dryobates villosus,Piciformes,Picidae,Dryobates,villosus,79,4.8,m,NA,"Montana, USA",1,Picoides villosus,NA,NA,NA,NA,NA
-751,sp3990,White-headed Woodpecker,Pic à tête blanche,Dryobates albolarvatus,Piciformes,Picidae,Dryobates,albolarvatus,59.2,3.8,f,NA,"Oregon, USA",1,Picoides albolavatus,NA,NA,NA,NA,NA
-751,sp3990,White-headed Woodpecker,Pic à tête blanche,Dryobates albolarvatus,Piciformes,Picidae,Dryobates,albolarvatus,63,3.4,m,NA,"Oregon, USA",1,Picoides albolavatus,NA,NA,NA,NA,NA
+751,sp3990,White-headed Woodpecker,Pic à tête blanche,Dryobates albolarvatus,Piciformes,Picidae,Dryobates,albolarvatus,59.2,3.8,f,NA,"Oregon, USA",1,Picoides albolarvatus,NA,NA,NA,NA,NA
+751,sp3990,White-headed Woodpecker,Pic à tête blanche,Dryobates albolarvatus,Piciformes,Picidae,Dryobates,albolarvatus,63,3.4,m,NA,"Oregon, USA",1,Picoides albolarvatus,NA,NA,NA,NA,NA
 753,sp3975,Arizona Woodpecker,Pic d'Arizona,Dryobates arizonae,Piciformes,Picidae,Dryobates,arizonae,44.1,NA,f,NA,"Arizona, USA",1,Picoides arizonae,NA,NA,NA,NA,NA
 753,sp3975,Arizona Woodpecker,Pic d'Arizona,Dryobates arizonae,Piciformes,Picidae,Dryobates,arizonae,49.4,2.3,m,NA,"Arizona, USA",1,Picoides arizonae,NA,NA,NA,NA,NA
 757,sp4123,(unid. Red/Yellow Shafted) Northern Flicker,Pic flamboyant (groupe non identifié),Colaptes auratus,Piciformes,Picidae,Colaptes,auratus,125,9.1,f,auratus,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 757,sp4123,(unid. Red/Yellow Shafted) Northern Flicker,Pic flamboyant (groupe non identifié),Colaptes auratus,Piciformes,Picidae,Colaptes,auratus,128,10.3,m,auratus,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 757,sp4123,(unid. Red/Yellow Shafted) Northern Flicker,Pic flamboyant (groupe non identifié),Colaptes auratus,Piciformes,Picidae,Colaptes,auratus,142,2.2,NA,cafer,"Oregon, USA",NA,NA,NA,NA,NA,NA,NA
-761,sp4140,Gilded Flicker,Pic chrysoïde,Colaptes chrysoides,Piciformes,Picidae,Colaptes,chrysoides,111,7.4,m,mearnsi,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
+761,sp4140,Gilded Flicker,Pic chrysoïde,Colaptes chrysoides,Piciformes,Picidae,Colaptes,chrysoides,111,7.4,NA,mearnsi,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 764,sp4050,Pileated Woodpecker,Grand Pic,Dryocopus pileatus,Piciformes,Picidae,Dryocopus,pileatus,266,NA,f,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 764,sp4050,Pileated Woodpecker,Grand Pic,Dryocopus pileatus,Piciformes,Picidae,Dryocopus,pileatus,270,NA,f,NA,"Washington, USA",NA,NA,NA,NA,NA,NA,NA
 764,sp4050,Pileated Woodpecker,Grand Pic,Dryocopus pileatus,Piciformes,Picidae,Dryocopus,pileatus,305,NA,m,NA,"Washington, USA",NA,NA,NA,NA,NA,NA,NA
@@ -294,7 +294,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 782,sp3550,Prairie Falcon,Faucon des prairies,Falco mexicanus,Falconiformes,Falconidae,Falco,mexicanus,908,65.9,f,NA,"Idaho, USA",NA,NA,NA,NA,NA,NA,NA
 783,sp3824,Monk Parakeet,Conure veuve,Myiopsitta monachus,Psittaciformes,Psittacidae,Myiopsitta,monachus,120,NA,NA,NA,Argentina,NA,NA,NA,NA,NA,NA,NA
 786,sp51830,Nanday Parakeet,Conure nanday,Aratinga nenday,Psittaciformes,Psittacidae,Aratinga,nenday,128,NA,NA,NA,Paraguay,1,Nandayus nenday,NA,NA,NA,NA,NA
-800,sp52021,Yellow-chevroned Parakeet,Toui à ailes jaunes,Brotogeris chiriri,Psittaciformes,Psittacidae,Brotogeris,chiriri,61.6,NA,NA,NA,Bolivia; California; USA,NA,NA,NA,NA,NA,NA,NA
+800,sp52021,Yellow-chevroned Parakeet,Toui à ailes jaunes,Brotogeris chiriri,Psittaciformes,Psittacidae,Brotogeris,chiriri,61.6,NA,NA,NA,"Bolivia; California, USA",NA,NA,NA,NA,NA,NA,NA
 815,sp3822,Budgerigar,Perruche ondulée,Melopsittacus undulatus,Psittaciformes,Psittaculidae,Melopsittacus,undulatus,28.8,2.1,f,NA,Eastern Australia,NA,NA,NA,NA,NA,NA,NA
 815,sp3822,Budgerigar,Perruche ondulée,Melopsittacus undulatus,Psittaciformes,Psittaculidae,Melopsittacus,undulatus,29.2,1.9,m,NA,Eastern Australia,NA,NA,NA,NA,NA,NA,NA
 872,sp4720,Northern Beardless-Tyrannulet,Tyranneau imberbe,Camptostoma imberbe,Passeriformes,Tyrannidae,Camptostoma,imberbe,7.4,0.8,NA,NA,Mexico; Belize,NA,NA,NA,NA,NA,NA,NA
@@ -343,10 +343,10 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 939,sp4710,Vermilion Flycatcher,Moucherolle vermillon,Pyrocephalus rubinus,Passeriformes,Tyrannidae,Pyrocephalus,rubinus,14.4,NA,NA,NA,Nicaragua,NA,NA,NA,NA,NA,NA,NA
 941,sp6220,Loggerhead Shrike,Pie-grièche migratrice,Lanius ludovicianus,Passeriformes,Laniidae,Lanius,ludovicianus,47.7,3.5,NA,NA,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
 941,sp6220,Loggerhead Shrike,Pie-grièche migratrice,Lanius ludovicianus,Passeriformes,Laniidae,Lanius,ludovicianus,55.8,0.3,NA,NA,"Alberta, Canada",NA,NA,NA,NA,NA,NA,NA
-942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,60.4,3.3,NA,NA,Israel,NA,NA,NA,NA,NA,NA,NA
-942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,63.4,3.3,NA,NA,Eastern USA,1,Lanius excubitor borealis,NA,NA,NA,NA,NA
-942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,63.4,6,NA,NA,Europe,1,Lanius excubitor excubitor,NA,NA,NA,NA,NA
-942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,66.6,4.6,NA,NA,Western USA,1,Lanius excubitor borealis,NA,NA,NA,NA,NA
+942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,60.4,3.3,NA,NA,Israel,1,Lanius excubitor,NA,NA,NA,NA,NA
+942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,63.4,3.3,NA,excubitor borealis,Eastern USA,1,Lanius excubitor borealis,NA,NA,NA,NA,NA
+942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,63.4,6,NA,excubitor excubitor,Europe,1,Lanius excubitor excubitor,NA,NA,NA,NA,NA
+942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,66.6,4.6,NA,excubitor borealis,Western USA,1,Lanius excubitor borealis,NA,NA,NA,NA,NA
 950,sp6300,Black-capped Vireo,Viréo à tête noire,Vireo atricapilla,Passeriformes,Vireonidae,Vireo,atricapilla,8.8,0.4,f,NA,"Oklahoma & Texas, USA",NA,NA,NA,NA,NA,NA,NA
 950,sp6300,Black-capped Vireo,Viréo à tête noire,Vireo atricapilla,Passeriformes,Vireonidae,Vireo,atricapilla,9.2,0.4,m,NA,"Oklahoma & Texas, USA",NA,NA,NA,NA,NA,NA,NA
 952,sp6310,White-eyed Vireo,Viréo aux yeux blancs,Vireo griseus,Passeriformes,Vireonidae,Vireo,griseus,11.4,NA,NA,NA,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
@@ -384,9 +384,9 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,80.3,NA,m,nevadae,Western USA,1,Western Scrub-Jay,NA,NA,NA,NA,NA
 991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,82.7,NA,f,oocleptica,"California, USA",1,Western Scrub-Jay,NA,NA,NA,NA,NA
 991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,84.8,NA,m,hypoleuca,"Southern Baja California, Mexico",1,Western Scrub-Jay,NA,NA,NA,NA,NA
-991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,94.6,NA,f,sunichrasti,South-central Mexico,1,Western Scrub-Jay,NA,NA,NA,NA,NA
+991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,94.6,NA,f,sumichrasti,South-central Mexico,1,Western Scrub-Jay,NA,NA,NA,NA,NA
 991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,96.6,NA,m,oocleptica,"California, USA",1,Western Scrub-Jay,NA,NA,NA,NA,NA
-991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,100,NA,m,sunichrasti,South-central Mexico,1,Western Scrub-Jay,NA,NA,NA,NA,NA
+991,sp4812,California Scrub-Jay,Geai buissonnier,Aphelocoma californica,Passeriformes,Corvidae,Aphelocoma,californica,100,NA,m,sumichrasti,South-central Mexico,1,Western Scrub-Jay,NA,NA,NA,NA,NA
 992,sp4813,Woodhouse's Scrub-Jay,Geai de Woodhouse,Aphelocoma woodhouseii,Passeriformes,Corvidae,Aphelocoma,woodhouseii,NA,NA,NA,NA,NA,NA,NA,1,Aphelocoma,californica,NA,"According to Wikipedia, until recently considered the same species"
 995,sp4820,Mexican Jay,Geai du Mexique,Aphelocoma wollweberi,Passeriformes,Corvidae,Aphelocoma,ultramarina,95,NA,f,couchii,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
 995,sp4820,Mexican Jay,Geai du Mexique,Aphelocoma wollweberi,Passeriformes,Corvidae,Aphelocoma,ultramarina,102,NA,m,couchii,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
@@ -397,7 +397,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 997,sp4910,Clark's Nutcracker,Cassenoix d'Amérique,Nucifraga columbiana,Passeriformes,Corvidae,Nucifraga,columbiana,137,0.8,m,NA,"Montana, USA",NA,NA,NA,NA,NA,NA,NA
 998,sp4750,Black-billed Magpie,Pie d'Amérique,Pica hudsonia,Passeriformes,Corvidae,Pica,hudsonia,166,14.3,f,NA,"Colorado, USA",NA,NA,NA,NA,NA,NA,NA
 998,sp4750,Black-billed Magpie,Pie d'Amérique,Pica hudsonia,Passeriformes,Corvidae,Pica,hudsonia,189,10.3,m,NA,"Colorado, USA",NA,NA,NA,NA,NA,NA,NA
-999,sp4760,Yellow-billed Magpie,Pie à bec jaune,Pica nuttalli,Passeriformes,Corvidae,Pica,nuttalli,144,8.7,m,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
+999,sp4760,Yellow-billed Magpie,Pie à bec jaune,Pica nuttalli,Passeriformes,Corvidae,Pica,nuttalli,144,8.7,f,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
 999,sp4760,Yellow-billed Magpie,Pie à bec jaune,Pica nuttalli,Passeriformes,Corvidae,Pica,nuttalli,174,8.8,m,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
 1001,sp4880,American Crow,Corneille d'Amérique,Corvus brachyrhynchos,Passeriformes,Corvidae,Corvus,brachyrhynchos,376,28.8,f,hesperis,"California, USA",NA,NA,NA,NA,NA,NA,NA
 1001,sp4880,American Crow,Corneille d'Amérique,Corvus brachyrhynchos,Passeriformes,Corvidae,Corvus,brachyrhynchos,423,33.6,m,hesperis,"California, USA",NA,NA,NA,NA,NA,NA,NA
@@ -447,8 +447,8 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1035,sp7380,Mountain Chickadee,Mésange de Gambel,Poecile gambeli,Passeriformes,Paridae,Poecile,gambeli,10.8,1,NA,NA,"Utah, USA",NA,NA,NA,NA,NA,NA,NA
 1035,sp7380,Mountain Chickadee,Mésange de Gambel,Poecile gambeli,Passeriformes,Paridae,Poecile,gambeli,11.1,1.1,f,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
 1035,sp7380,Mountain Chickadee,Mésange de Gambel,Poecile gambeli,Passeriformes,Paridae,Poecile,gambeli,11.7,0.8,m,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
-1036,sp7370,Mexican Chickadee,Mésange grise,Poecile sclateri,Passeriformes,Paridae,Poecile,sclateri,9.8,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1036,sp7370,Mexican Chickadee,Mésange grise,Poecile sclateri,Passeriformes,Paridae,Poecile,sclateri,10.4,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1036,sp7370,Mexican Chickadee,Mésange grise,Poecile sclateri,Passeriformes,Paridae,Poecile,sclateri,9.8,1,NA,sclateri,NA,NA,NA,NA,NA,NA,NA,NA
+1036,sp7370,Mexican Chickadee,Mésange grise,Poecile sclateri,Passeriformes,Paridae,Poecile,sclateri,10.4,0.8,NA,eidos,NA,NA,NA,NA,NA,NA,NA,NA
 1037,sp7410,Chestnut-backed Chickadee,Mésange à dos marron,Poecile rufescens,Passeriformes,Paridae,Poecile,rufescens,9.1,0.6,f,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
 1037,sp7410,Chestnut-backed Chickadee,Mésange à dos marron,Poecile rufescens,Passeriformes,Paridae,Poecile,rufescens,9.7,0.5,m,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
 1038,sp7400,Boreal Chickadee,Mésange à tête brune,Poecile hudsonicus,Passeriformes,Paridae,Poecile,hudsonicus,9.8,0.8,NA,NA,"Ontario, Canada",1,Poecile hudsonica,NA,NA,NA,NA,NA
@@ -486,12 +486,12 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1063,sp7210,House Wren,Troglodyte familier,Troglodytes aedon,Passeriformes,Troglodytidae,Troglodytes,aedon,11.1,0.8,f,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 1063,sp7210,House Wren,Troglodyte familier,Troglodytes aedon,Passeriformes,Troglodytidae,Troglodytes,aedon,11.6,0.9,NA,NA,El Salvador,NA,NA,NA,NA,NA,NA,NA
 1067,sp7221,Pacific Wren,Troglodyte de Baird,Troglodytes pacificus,Passeriformes,Troglodytidae,Troglodytes,pacificus,NA,NA,NA,NA,NA,NA,NA,1,Troglodytes,hiemalis,NA,Recently split from winter wren
-1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,8.9,0.2,NA,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
-1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.1,0.9,f,NA,"British Columbia, Canada",NA,NA,NA,NA,NA,NA,NA
-1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.3,1.1,NA,troglodytes,Germany,NA,NA,NA,NA,NA,NA,NA
-1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.4,0.3,m,NA,"British Columbia, Canada",NA,NA,NA,NA,NA,NA,NA
-1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.9,NA,NA,NA,Great Britain,NA,NA,NA,NA,NA,NA,NA
-1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,12.2,NA,NA,fridariensis,Fair Is.,NA,NA,NA,NA,NA,NA,NA
+1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,8.9,0.2,NA,NA,"Pennsylvania, USA",1,Troglodytes troglodytes,NA,NA,NA,NA,NA
+1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.1,0.9,f,NA,"British Columbia, Canada",1,Troglodytes troglodytes,NA,NA,NA,NA,NA
+1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.3,1.1,NA,troglodytes,Germany,1,Troglodytes troglodytes troglodytes,NA,NA,NA,NA,NA
+1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.4,0.3,m,NA,"British Columbia, Canada",1,Troglodytes troglodytes,NA,NA,NA,NA,NA
+1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,9.9,NA,NA,NA,Great Britain,1,Troglodytes troglodytes,NA,NA,NA,NA,NA
+1068,sp7222,Winter Wren,Troglodyte des forêts,Troglodytes hiemalis,Passeriformes,Troglodytidae,Troglodytes,hiemalis,12.2,NA,NA,fridariensis,Fair Is.,1,Troglodytes troglodytes fridariensis,NA,NA,NA,NA,NA
 1070,sp7240,Sedge Wren,Troglodyte à bec court,Cistothorus platensis,Passeriformes,Troglodytidae,Cistothorus,platensis,7.7,NA,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1070,sp7240,Sedge Wren,Troglodyte à bec court,Cistothorus platensis,Passeriformes,Troglodytidae,Cistothorus,platensis,8.2,NA,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1070,sp7240,Sedge Wren,Troglodyte à bec court,Cistothorus platensis,Passeriformes,Troglodytidae,Cistothorus,platensis,9,0.7,NA,NA,Mexico; Central America,NA,NA,NA,NA,NA,NA,NA
@@ -524,8 +524,8 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1124,sp7640,Bluethroat,Gorgebleue à miroir,Cyanecula svecica,Passeriformes,Muscicapidae,Cyanecula,svecica,16.1,1.1,m,pallidogularis,Siberia,1,Luscinia svecica pallidogularis,NA,NA,NA,NA,NA
 1124,sp7640,Bluethroat,Gorgebleue à miroir,Cyanecula svecica,Passeriformes,Muscicapidae,Cyanecula,svecica,18.2,NA,NA,svecica,Russia,1,Luscinia svecica svecica,NA,NA,NA,NA,NA
 1124,sp7640,Bluethroat,Gorgebleue à miroir,Cyanecula svecica,Passeriformes,Muscicapidae,Cyanecula,svecica,19.3,NA,NA,svecica,"Alaska, USA",1,Luscinia svecica svecica,NA,NA,NA,NA,NA
-1132,sp7650,Northern Wheatear,Traquet motteux,Oenanthe oenanthe,Passeriformes,Muscicapidae,Oenanthe,oenanthe,22.3,2.5,f,oenante,Italy,NA,NA,NA,NA,NA,NA,NA
-1132,sp7650,Northern Wheatear,Traquet motteux,Oenanthe oenanthe,Passeriformes,Muscicapidae,Oenanthe,oenanthe,24,1.5,m,oenante,Italy,NA,NA,NA,NA,NA,NA,NA
+1132,sp7650,Northern Wheatear,Traquet motteux,Oenanthe oenanthe,Passeriformes,Muscicapidae,Oenanthe,oenanthe,22.3,2.5,f,oneanthe,Italy,NA,NA,NA,NA,NA,NA,NA
+1132,sp7650,Northern Wheatear,Traquet motteux,Oenanthe oenanthe,Passeriformes,Muscicapidae,Oenanthe,oenanthe,24,1.5,m,oneanthe,Italy,NA,NA,NA,NA,NA,NA,NA
 1132,sp7650,Northern Wheatear,Traquet motteux,Oenanthe oenanthe,Passeriformes,Muscicapidae,Oenanthe,oenanthe,30.6,NA,NA,leucorhoa,Scotland,NA,NA,NA,NA,NA,NA,NA
 1133,sp7660,Eastern Bluebird,Merlebleu de l'Est,Sialia sialis,Passeriformes,Turdidae,Sialia,sialis,27.5,3.3,NA,NA,Eastern USA,NA,NA,NA,NA,NA,NA,NA
 1134,sp7670,Western Bluebird,Merlebleu de l'Ouest,Sialia mexicana,Passeriformes,Turdidae,Sialia,mexicana,25.8,1.1,m,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
@@ -554,7 +554,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1173,sp7060,Long-billed Thrasher,Moqueur à long bec,Toxostoma longirostre,Passeriformes,Mimidae,Toxostoma,longirostre,67.6,5.5,NA,sennetti,"Texas, USA",NA,NA,NA,NA,NA,NA,NA
 1175,sp7080,Bendire's Thrasher,Moqueur de Bendire,Toxostoma bendirei,Passeriformes,Mimidae,Toxostoma,bendirei,62.2,5.1,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 1177,sp7100,California Thrasher,Moqueur de Californie,Toxostoma redivivum,Passeriformes,Mimidae,Toxostoma,redivivum,84.4,3.9,NA,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
-1178,sp7110,LeConte's Thrasher,Moqueur de LeConte,Toxostoma lecontei,Passeriformes,Mimidae,Toxostoma,lecontei,61.9,NA,NA,NA,SW USA; Mexico,NA,NA,NA,NA,NA,NA,NA
+1178,sp7110,LeConte's Thrasher,Moqueur de LeConte,Toxostoma lecontei,Passeriformes,Mimidae,Toxostoma,lecontei,61.9,NA,NA,NA,Southwest USA; Mexico,NA,NA,NA,NA,NA,NA,NA
 1179,sp7120,Crissal Thrasher,Moqueur cul-roux,Toxostoma crissale,Passeriformes,Mimidae,Toxostoma,crissale,62.7,4.3,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 1180,sp7020,Sage Thrasher,Moqueur des armoises,Oreoscoptes montanus,Passeriformes,Mimidae,Oreoscoptes,montanus,44.2,NA,NA,NA,"Washington, USA",NA,NA,NA,NA,NA,NA,NA
 1181,sp7031,Bahama Mockingbird,Moqueur des Bahamas,Mimus gundlachii,Passeriformes,Mimidae,Mimus,gundlachii,66.8,8.8,NA,NA,Bahamas,NA,NA,NA,NA,NA,NA,NA
@@ -601,7 +601,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1225,sp5240,Gray-crowned Rosy-Finch,Roselin à tête grise,Leucosticte tephrocotis,Passeriformes,Fringillidae,Leucosticte,tephrocotis,48.5,5.3,f,griseonucha,"Aleutian Is., USA",NA,NA,NA,NA,NA,NA,NA
 1226,sp5250,Black Rosy-Finch,Roselin noir,Leucosticte atrata,Passeriformes,Fringillidae,Leucosticte,atrata,25.1,1.7,m,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1226,sp5250,Black Rosy-Finch,Roselin noir,Leucosticte atrata,Passeriformes,Fringillidae,Leucosticte,atrata,25.4,2.3,f,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1228,sp5190,House Finch,Roselin familier,Haemorhous mexicanus,Passeriformes,Fringillidae,Haemorhous,mexicanus,21.4,1.3,NA,NA,"California, USA",1,Carpodacus mexianus,NA,NA,NA,NA,NA
+1228,sp5190,House Finch,Roselin familier,Haemorhous mexicanus,Passeriformes,Fringillidae,Haemorhous,mexicanus,21.4,1.3,NA,NA,"California, USA",1,Carpodacus mexicanus,NA,NA,NA,NA,NA
 1229,sp5170,Purple Finch,Roselin pourpré,Haemorhous purpureus,Passeriformes,Fringillidae,Haemorhous,purpureus,23.3,NA,NA,NA,"Pennsylvania, USA",1,Carpodacus purpureus,NA,NA,NA,NA,NA
 1230,sp5180,Cassin's Finch,Roselin de Cassin,Haemorhous cassinii,Passeriformes,Fringillidae,Haemorhous,cassinii,26.5,2.4,NA,NA,"Arizona, USA",1,Carpodacus cassinii,NA,NA,NA,NA,NA
 1234,sp5280,Common Redpoll,Sizerin flammé,Acanthis flammea,Passeriformes,Fringillidae,Acanthis,flammea,13,NA,NA,NA,"Alaska, USA",1,Carduelis flammea,NA,NA,NA,NA,NA
@@ -627,10 +627,10 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1251,sp5380,Chestnut-collared Longspur,Plectrophane à ventre noir,Calcarius ornatus,Passeriformes,Calcariidae,Calcarius,ornatus,20.3,NA,NA,NA,"Saskatchewan, Canada",NA,NA,NA,NA,NA,NA,NA
 1252,sp5370,Smith's Longspur,Plectrophane de Smith,Calcarius pictus,Passeriformes,Calcariidae,Calcarius,pictus,25.3,NA,f,NA,"Manitoba, Canada",NA,NA,NA,NA,NA,NA,NA
 1252,sp5370,Smith's Longspur,Plectrophane de Smith,Calcarius pictus,Passeriformes,Calcariidae,Calcarius,pictus,28.1,NA,m,NA,"Manitoba, Canada",NA,NA,NA,NA,NA,NA,NA
-1253,sp5390,McCown's Longspur,Plectrophane de McCown,Rhynchophanes mccownii,Passeriformes,Calcariidae,Rhynchophanes,mccownii,24.7,NA,f,NA,"Saskatchewan, Canada",NA,NA,NA,NA,NA,NA,NA
-1253,sp5390,McCown's Longspur,Plectrophane de McCown,Rhynchophanes mccownii,Passeriformes,Calcariidae,Rhynchophanes,mccownii,26.7,NA,m,NA,"Saskatchewan, Canada",NA,NA,NA,NA,NA,NA,NA
+1253,sp5390,McCown's Longspur,Plectrophane de McCown,Rhynchophanes mccownii,Passeriformes,Calcariidae,Rhynchophanes,mccownii,24.7,NA,f,NA,"Saskatchewan, Canada",1,Calcarius mccownii,NA,NA,NA,NA,NA
+1253,sp5390,McCown's Longspur,Plectrophane de McCown,Rhynchophanes mccownii,Passeriformes,Calcariidae,Rhynchophanes,mccownii,26.7,NA,m,NA,"Saskatchewan, Canada",1,Calcarius mccownii,NA,NA,NA,NA,NA
 1254,sp5340,Snow Bunting,Plectrophane des neiges,Plectrophenax nivalis,Passeriformes,Calcariidae,Plectrophenax,nivalis,42.2,5.5,NA,NA,"Alaska, USA",NA,NA,NA,NA,NA,NA,NA
-1269,sp5860,Olive Sparrow,Tohi olive,Arremonops rufivirgatus,Passeriformes,Passerellidae,Arremonops,rufivirgatus,21.7,2.6,f,NA,South Texas USA,NA,NA,NA,NA,NA,NA,NA
+1269,sp5860,Olive Sparrow,Tohi olive,Arremonops rufivirgatus,Passeriformes,Passerellidae,Arremonops,rufivirgatus,21.7,2.6,f,NA,"South Texas, USA",NA,NA,NA,NA,NA,NA,NA
 1269,sp5860,Olive Sparrow,Tohi olive,Arremonops rufivirgatus,Passeriformes,Passerellidae,Arremonops,rufivirgatus,23.2,2.8,m,NA,"South Texas, USA",NA,NA,NA,NA,NA,NA,NA
 1274,sp5900,Green-tailed Towhee,Tohi à queue verte,Pipilo chlorurus,Passeriformes,Passerellidae,Pipilo,chlorurus,29.4,3.3,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 1275,sp5880,Spotted Towhee,Tohi tacheté,Pipilo maculatus,Passeriformes,Passerellidae,Pipilo,maculatus,38,2.2,f,falcifer,"California, USA",NA,NA,NA,NA,NA,NA,NA
@@ -667,21 +667,21 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1308,sp5738,Sagebrush Sparrow,Bruant des armoises,Artemisiospiza nevadensis,Passeriformes,Passerellidae,Artemisiospiza,nevadensis,NA,NA,NA,NA,NA,NA,NA,1,Amphispiza,belli,nevadensis,"Split in 2013: Belli & nevadensis previously one species called ""sage sparrow"""
 1309,sp5739,Bell's Sparrow,Bruant de Bell,Artemisiospiza belli,Passeriformes,Passerellidae,Artemisiospiza,belli,NA,NA,NA,NA,NA,NA,NA,1,Amphispiza,belli,belli,"Split in 2013: Belli & nevadensis previously one species called ""sage sparrow"""
 1311,sp6050,Lark Bunting,Bruant noir et blanc,Calamospiza melanocorys,Passeriformes,Passerellidae,Calamospiza,melanocorys,37.6,3.7,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
-1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,17,0.8,NA,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
+1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,17,0.8,f,NA,"California, USA",NA,NA,NA,NA,NA,NA,NA
 1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,17.1,1.6,f,oblitus,"Minnesota, USA",NA,NA,NA,NA,NA,NA,NA
 1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,18,1.4,m,oblitus,"Minnesota, USA",NA,NA,NA,NA,NA,NA,NA
 1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,19.5,2.3,f,NA,"Manitoba, Canada",NA,NA,NA,NA,NA,NA,NA
-1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,20.4,0.8,NA,beldingi,"Baja California Norte, Mexico",NA,NA,NA,NA,NA,NA,NA
+1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,20.4,0.8,m,beldingi,"Baja California Norte, Mexico",NA,NA,NA,NA,NA,NA,NA
 1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,20.6,1.4,m,NA,"Manitoba, Canada",NA,NA,NA,NA,NA,NA,NA
-1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,22.7,1.1,NA,atratus,"Sonora, Mexico",NA,NA,NA,NA,NA,NA,NA
+1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,22.7,1.1,m,atratus,"Sonora, Mexico",NA,NA,NA,NA,NA,NA,NA
 1312,sp5420,Savannah Sparrow,Bruant des prés,Passerculus sandwichensis,Passeriformes,Passerellidae,Passerculus,sandwichensis,26,NA,NA,princeps,"Sable Is., Canada",NA,NA,NA,NA,NA,NA,NA
 1313,sp5460,Grasshopper Sparrow,Bruant sauterelle,Ammodramus savannarum,Passeriformes,Passerellidae,Ammodramus,savannarum,17,2.8,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 1313,sp5460,Grasshopper Sparrow,Bruant sauterelle,Ammodramus savannarum,Passeriformes,Passerellidae,Ammodramus,savannarum,17.2,1,m,floridanus,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
 1313,sp5460,Grasshopper Sparrow,Bruant sauterelle,Ammodramus savannarum,Passeriformes,Passerellidae,Ammodramus,savannarum,17.9,NA,NA,pratensis,"Connecticut, USA",NA,NA,NA,NA,NA,NA,NA
 1313,sp5460,Grasshopper Sparrow,Bruant sauterelle,Ammodramus savannarum,Passeriformes,Passerellidae,Ammodramus,savannarum,18.4,NA,f,floridanus,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
 1314,sp5450,Baird's Sparrow,Bruant de Baird,Centronyx bairdii,Passeriformes,Passerellidae,Centronyx,bairdii,17.5,1.4,NA,NA,"Arizona, USA",1,Ammodramus bairdii,NA,NA,NA,NA,NA
-1314,sp5450,Baird's Sparrow,Bruant de Baird,Centronyx bairdii,Passeriformes,Passerellidae,Centronyx,bairdii,17.8,NA,f,NA,"Arizona, USA",1,Ammodramus bairdii,NA,NA,NA,NA,NA
-1314,sp5450,Baird's Sparrow,Bruant de Baird,Centronyx bairdii,Passeriformes,Passerellidae,Centronyx,bairdii,18.9,NA,m,NA,"Arizona, USA",1,Ammodramus bairdii,NA,NA,NA,NA,NA
+1314,sp5450,Baird's Sparrow,Bruant de Baird,Centronyx bairdii,Passeriformes,Passerellidae,Centronyx,bairdii,17.8,NA,f,NA,"Saskatchewan, Canada",1,Ammodramus bairdii,NA,NA,NA,NA,NA
+1314,sp5450,Baird's Sparrow,Bruant de Baird,Centronyx bairdii,Passeriformes,Passerellidae,Centronyx,bairdii,18.9,NA,m,NA,"Saskatchewan, Canada",1,Ammodramus bairdii,NA,NA,NA,NA,NA
 1315,sp5470,Henslow's Sparrow,Bruant de Henslow,Centronyx henslowii,Passeriformes,Passerellidae,Centronyx,henslowii,12.8,NA,NA,NA,NA,1,Ammodramus henslowii,NA,NA,NA,NA,NA
 1316,sp5480,LeConte's Sparrow,Bruant de LeConte,Ammospiza leconteii,Passeriformes,Passerellidae,Ammospiza,leconteii,13,1.2,NA,NA,"Minnesota, USA",1,Ammodramus lecontei,NA,NA,NA,NA,NA
 1317,sp5500,Seaside Sparrow,Bruant maritime,Ammospiza maritima,Passeriformes,Passerellidae,Ammospiza,maritima,19.8,1.1,f,peninsulae,"Florida, USA",1,Ammodramus maritimus peninsulae,NA,NA,NA,NA,NA
@@ -726,7 +726,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1335,sp5677,(unid. race) Dark-eyed Junco,Junco ardoisé (groupe non identifié),Junco hyemalis,Passeriformes,Passerellidae,Junco,hyemalis,19.6,1.1,NA,caniceps,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 1335,sp5677,(unid. race) Dark-eyed Junco,Junco ardoisé (groupe non identifié),Junco hyemalis,Passeriformes,Passerellidae,Junco,hyemalis,20.8,NA,NA,carolinensis,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 1335,sp5677,(unid. race) Dark-eyed Junco,Junco ardoisé (groupe non identifié),Junco hyemalis,Passeriformes,Passerellidae,Junco,hyemalis,21.8,1.4,NA,dorsalis,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
-1335,sp5677,(unid. race) Dark-eyed Junco,Junco ardoisé (groupe non identifié),Junco hyemalis,Passeriformes,Passerellidae,Junco,hyemalis,22,NA,NA,aikeni,NA,NA,NA,NA,NA,NA,NA,NA
+1335,sp5677,(unid. race) Dark-eyed Junco,Junco ardoisé (groupe non identifié),Junco hyemalis,Passeriformes,Passerellidae,Junco,hyemalis,22,NA,m,aikeni,NA,NA,NA,NA,NA,NA,NA,NA
 1337,sp5700,Yellow-eyed Junco,Junco aux yeux jaunes,Junco phaeonotus,Passeriformes,Passerellidae,Junco,phaeonotus,20.4,1.1,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 1341,sp6830,Yellow-breasted Chat,Ictérie polyglotte,Icteria virens,Passeriformes,Icteriidae,Icteria,virens,24.4,0.9,m,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 1341,sp6830,Yellow-breasted Chat,Ictérie polyglotte,Icteria virens,Passeriformes,Icteriidae,Icteria,virens,25.4,1.1,f,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
@@ -742,11 +742,11 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1344,sp5010,Eastern Meadowlark,Sturnelle des prés,Sturnella magna,Passeriformes,Icteridae,Sturnella,magna,112,NA,m,lilianae,NA,NA,NA,NA,NA,NA,NA,NA
 1345,sp5011,Western Meadowlark,Sturnelle de l'Ouest,Sturnella neglecta,Passeriformes,Icteridae,Sturnella,neglecta,89.4,NA,f,NA,"Great Plains, USA",NA,NA,NA,NA,NA,NA,NA
 1345,sp5011,Western Meadowlark,Sturnelle de l'Ouest,Sturnella neglecta,Passeriformes,Icteridae,Sturnella,neglecta,112,NA,m,NA,"Great Plains, USA",NA,NA,NA,NA,NA,NA,NA
-1354,sp5060,Orchard Oriole,Oriole des vergers,Icterus spurius,Passeriformes,Icteridae,Icterus,spurius,19,NA,NA,fuertesi,Mexico,NA,NA,NA,NA,NA,NA,NA
+1354,sp5060,Orchard Oriole,Oriole des vergers,Icterus spurius,Passeriformes,Icteridae,Icterus,spurius,19,NA,m,fuertesi,Mexico,NA,NA,NA,NA,NA,NA,NA
 1354,sp5060,Orchard Oriole,Oriole des vergers,Icterus spurius,Passeriformes,Icteridae,Icterus,spurius,19.9,NA,NA,NA,"Nebraska, USA",NA,NA,NA,NA,NA,NA,NA
 1355,sp5050,Hooded Oriole,Oriole masqué,Icterus cucullatus,Passeriformes,Icteridae,Icterus,cucullatus,24.3,2,NA,NA,"Arizona, USA",NA,NA,NA,NA,NA,NA,NA
 1359,sp5080,Bullock's Oriole,Oriole de Bullock,Icterus bullockii,Passeriformes,Icteridae,Icterus,bullockii,37.9,NA,NA,NA,"Oklahoma, USA",NA,NA,NA,NA,NA,NA,NA
-1361,sp5032,Spot-breasted Oriole,Oriole maculé,Icterus pectoralis,Passeriformes,Icteridae,Icterus,pectoralis,46.5,NA,NA,NA,Western Mexico; El Salvador,NA,NA,NA,NA,NA,NA,NA
+1361,sp5032,Spot-breasted Oriole,Oriole maculé,Icterus pectoralis,Passeriformes,Icteridae,Icterus,pectoralis,46.5,NA,m,NA,Western Mexico; El Salvador,NA,NA,NA,NA,NA,NA,NA
 1362,sp5031,Altamira Oriole,Oriole à gros bec,Icterus gularis,Passeriformes,Icteridae,Icterus,gularis,51.5,NA,f,yucatanensis,"Yucatan, Mexico",NA,NA,NA,NA,NA,NA,NA
 1362,sp5031,Altamira Oriole,Oriole à gros bec,Icterus gularis,Passeriformes,Icteridae,Icterus,gularis,59.1,NA,m,yucatanensis,"Yucatan, Mexico",NA,NA,NA,NA,NA,NA,NA
 1363,sp5030,Audubon's Oriole,Oriole d'Audubon,Icterus graduacauda,Passeriformes,Icteridae,Icterus,graduacauda,42.2,4.9,NA,NA,Mexico,NA,NA,NA,NA,NA,NA,NA
@@ -789,7 +789,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1388,sp6420,Golden-winged Warbler,Paruline à ailes dorées,Vermivora chrysoptera,Passeriformes,Parulidae,Vermivora,chrysoptera,8.6,0.6,f,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 1388,sp6420,Golden-winged Warbler,Paruline à ailes dorées,Vermivora chrysoptera,Passeriformes,Parulidae,Vermivora,chrysoptera,8.9,0.7,m,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 1389,sp6410,Blue-winged Warbler,Paruline à ailes bleues,Vermivora cyanoptera,Passeriformes,Parulidae,Vermivora,pinus,8.9,NA,NA,NA,"West Virginia, USA",NA,NA,NA,NA,NA,NA,NA
-1389,sp6410,Blue-winged Warbler,Paruline à ailes bleues,Vermivora cyanoptera,Passeriformes,Parulidae,Vermivora,cyanoptera,NA,NA,NA,NA,NA,NA,NA,1,Vermivora,pinus,NA,Pinus changed to cynaoptera in 2010
+1389,sp6410,Blue-winged Warbler,Paruline à ailes bleues,Vermivora cyanoptera,Passeriformes,Parulidae,Vermivora,cyanoptera,NA,NA,NA,NA,NA,1,Vermivora pinus,1,Vermivora,pinus,NA,Pinus changed to cynaoptera in 2010
 1392,sp6360,Black-and-white Warbler,Paruline noir et blanc,Mniotilta varia,Passeriformes,Parulidae,Mniotilta,varia,10.9,NA,NA,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 1393,sp6370,Prothonotary Warbler,Paruline orangée,Protonotaria citrea,Passeriformes,Parulidae,Protonotaria,citrea,14.3,0.1,NA,NA,"Tennessee, USA",NA,NA,NA,NA,NA,NA,NA
 1394,sp6380,Swainson's Warbler,Paruline de Swainson,Limnothlypis swainsonii,Passeriformes,Parulidae,Limnothlypis,swainsonii,18.9,1.7,NA,NA,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
@@ -808,7 +808,7 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1410,sp6810,Common Yellowthroat,Paruline masquée,Geothlypis trichas,Passeriformes,Parulidae,Geothlypis,trichas,9.2,0.6,f,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
 1410,sp6810,Common Yellowthroat,Paruline masquée,Geothlypis trichas,Passeriformes,Parulidae,Geothlypis,trichas,9.2,NA,m,scirpicola,"California, USA",NA,NA,NA,NA,NA,NA,NA
 1410,sp6810,Common Yellowthroat,Paruline masquée,Geothlypis trichas,Passeriformes,Parulidae,Geothlypis,trichas,9.7,0.6,m,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
-1410,sp6810,Common Yellowthroat,Paruline masquée,Geothlypis trichas,Passeriformes,Parulidae,Geothlypis,trichas,10.1,NA,NA,occidentalis,Western USA,NA,NA,NA,NA,NA,NA,NA
+1410,sp6810,Common Yellowthroat,Paruline masquée,Geothlypis trichas,Passeriformes,Parulidae,Geothlypis,trichas,10.1,NA,m,occidentalis,Western USA,NA,NA,NA,NA,NA,NA,NA
 1412,sp6840,Hooded Warbler,Paruline à capuchon,Setophaga citrina,Passeriformes,Parulidae,Setophaga,citrina,10.3,0.7,f,NA,"Pennsylvania, USA",1,Wilsonia citrina,NA,NA,NA,NA,NA
 1412,sp6840,Hooded Warbler,Paruline à capuchon,Setophaga citrina,Passeriformes,Parulidae,Setophaga,citrina,10.8,0.6,m,NA,"Pennsylvania, USA",1,Wilsonia citrina,NA,NA,NA,NA,NA
 1413,sp6870,American Redstart,Paruline flamboyante,Setophaga ruticilla,Passeriformes,Parulidae,Setophaga,ruticilla,8.1,0.6,f,NA,"Pennsylvania, USA",NA,NA,NA,NA,NA,NA,NA
@@ -828,8 +828,8 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1419,sp6570,Magnolia Warbler,Paruline à tête cendrée,Setophaga magnolia,Passeriformes,Parulidae,Setophaga,magnolia,7.9,0.5,f,NA,"Pennsylvania, USA",1,Dendroica magnolia,NA,NA,NA,NA,NA
 1419,sp6570,Magnolia Warbler,Paruline à tête cendrée,Setophaga magnolia,Passeriformes,Parulidae,Setophaga,magnolia,8.4,0.5,m,NA,"Pennsylvania, USA",1,Dendroica magnolia,NA,NA,NA,NA,NA
 1420,sp6600,Bay-breasted Warbler,Paruline à poitrine baie,Setophaga castanea,Passeriformes,Parulidae,Setophaga,castanea,11.8,NA,NA,NA,"Pennsylvania, USA",1,Dendroica castanea,NA,NA,NA,NA,NA
-1421,sp6620,Blackburnian Warbler,Paruline à gorge orangée,Setophaga fusca,Passeriformes,Parulidae,Setophaga,fusca,9.5,0.6,NA,NA,NA,1,Dendroica fusca,NA,NA,NA,NA,NA
-1421,sp6620,Blackburnian Warbler,Paruline à gorge orangée,Setophaga fusca,Passeriformes,Parulidae,Setophaga,fusca,10,2,NA,NA,NA,1,Dendroica fusca,NA,NA,NA,NA,NA
+1421,sp6620,Blackburnian Warbler,Paruline à gorge orangée,Setophaga fusca,Passeriformes,Parulidae,Setophaga,fusca,9.5,0.6,f,NA,NA,1,Dendroica fusca,NA,NA,NA,NA,NA
+1421,sp6620,Blackburnian Warbler,Paruline à gorge orangée,Setophaga fusca,Passeriformes,Parulidae,Setophaga,fusca,10,2,m,NA,NA,1,Dendroica fusca,NA,NA,NA,NA,NA
 1422,sp6520,Yellow Warbler,Paruline jaune,Setophaga petechia,Passeriformes,Parulidae,Setophaga,petechia,9.2,0.5,f,NA,"Pennsylvania, USA",1,Dendroica petechia,NA,NA,NA,NA,NA
 1422,sp6520,Yellow Warbler,Paruline jaune,Setophaga petechia,Passeriformes,Parulidae,Setophaga,petechia,9.6,0.5,m,NA,"Pennsylvania, USA",1,Dendroica petechia,NA,NA,NA,NA,NA
 1422,sp6520,Yellow Warbler,Paruline jaune,Setophaga petechia,Passeriformes,Parulidae,Setophaga,petechia,9.6,0.8,NA,NA,Guadeloupe,1,Dendroica petechia,NA,NA,NA,NA,NA
@@ -840,8 +840,8 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 1423,sp6590,Chestnut-sided Warbler,Paruline à flancs marron,Setophaga pensylvanica,Passeriformes,Parulidae,Setophaga,pensylvanica,9.5,0.6,m,NA,"Pennsylvania, USA",1,Dendroica pensylvanica,NA,NA,NA,NA,NA
 1424,sp6610,Blackpoll Warbler,Paruline rayée,Setophaga striata,Passeriformes,Parulidae,Setophaga,striata,11.4,0.6,f,NA,"Pennsylvania, USA",1,Dendroica striata,NA,NA,NA,NA,NA
 1424,sp6610,Blackpoll Warbler,Paruline rayée,Setophaga striata,Passeriformes,Parulidae,Setophaga,striata,12.3,0.6,m,NA,"Pennsylvania, USA",1,Dendroica striata,NA,NA,NA,NA,NA
-1425,sp6540,Black-throated Blue Warbler,Paruline bleue,Setophaga caerulescens,Passeriformes,Parulidae,Setophaga,caerulescens,9.8,NA,f,NA,"Florida, USA",1,Dendroica carulenscens,NA,NA,NA,NA,NA
-1425,sp6540,Black-throated Blue Warbler,Paruline bleue,Setophaga caerulescens,Passeriformes,Parulidae,Setophaga,caerulescens,10.5,NA,m,NA,"Florida, USA",1,Dendroica carulenscens,NA,NA,NA,NA,NA
+1425,sp6540,Black-throated Blue Warbler,Paruline bleue,Setophaga caerulescens,Passeriformes,Parulidae,Setophaga,caerulescens,9.8,NA,f,NA,"Florida, USA",1,Dendroica caerulescens,NA,NA,NA,NA,NA
+1425,sp6540,Black-throated Blue Warbler,Paruline bleue,Setophaga caerulescens,Passeriformes,Parulidae,Setophaga,caerulescens,10.5,NA,m,NA,"Florida, USA",1,Dendroica caerulescens,NA,NA,NA,NA,NA
 1426,sp6720,Palm Warbler,Paruline à couronne rousse,Setophaga palmarum,Passeriformes,Parulidae,Setophaga,palmarum,10.3,0.5,NA,NA,"Pennsylvania, USA",1,Dendroica palmarum,NA,NA,NA,NA,NA
 1427,sp6710,Pine Warbler,Paruline des pins,Setophaga pinus,Passeriformes,Parulidae,Setophaga,pinus,11.2,1.7,NA,NA,"North Carolina, USA",1,Dendroica pinus,NA,NA,NA,NA,NA
 1427,sp6710,Pine Warbler,Paruline des pins,Setophaga pinus,Passeriformes,Parulidae,Setophaga,pinus,11.9,1.2,NA,NA,"Minnesota, USA",1,Dendroica pinus,NA,NA,NA,NA,NA
