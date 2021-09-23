@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • BBSsize</title>
+<title>Granby BBS route. — granby • BBSsize</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Granby BBS route. — granby" />
+<meta property="og:description" content="As loaded from MATSS (`get_bbs_route_region_data`). See MATSS for full documentation." />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -100,114 +101,31 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Granby BBS route.</h1>
+    
+    <div class="hidden name"><code>granby.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>As loaded from MATSS (`get_bbs_route_region_data`). See MATSS for full documentation.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='va'>granby</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="add_estimated_sds.html">add_estimated_sds()</a></code> </p>
-        </td>
-        <td><p>Add estimates for SDs</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="clean_sp_size_data.html">clean_sp_size_data()</a></code> </p>
-        </td>
-        <td><p>Clean raw size data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="estimate_b.html">estimate_b()</a></code> </p>
-        </td>
-        <td><p>Estimate b (energy)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="estimate_sd.html">estimate_sd()</a></code> </p>
-        </td>
-        <td><p>Estimate SD given mean and optional pars</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_sd_parameters.html">get_sd_parameters()</a></code> </p>
-        </td>
-        <td><p>Get SD parameters from linear model</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_sp_mean_size.html">get_sp_mean_size()</a></code> </p>
-        </td>
-        <td><p>Get species' mean size and sd</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="granby.html">granby</a></code> </p>
-        </td>
-        <td><p>Granby BBS route.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="hartland.html">hartland</a></code> </p>
-        </td>
-        <td><p>New Hartford BBS route.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="raw_masses.html">raw_masses</a></code> </p>
-        </td>
-        <td><p>Records of mean and standard deviation masses for species in BBS, from Dunning (2008)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sd_table.html">sd_table</a></code> </p>
-        </td>
-        <td><p>Means and (estimated) standard deviations of body size for species in the BBS.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="simulate_isd.html">simulate_isd()</a></code> </p>
-        </td>
-        <td><p>Simulate an ISD for a single year</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="simulate_isd_route.html">simulate_isd_route()</a></code> </p>
-        </td>
-        <td><p>Simulate the ISD for a BBS route</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="simulate_isd_ts.html">simulate_isd_ts()</a></code> </p>
-        </td>
-        <td><p>Simulate ISD data for a timeseries</p></td>
-      </tr>
-    </tbody>
-    </table>
+
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>A MATSS dataset.</p><dl>
+  <dt>abundance</dt><dd><p>tibble of species abundances (columns) per year (rows)</p></dd>
+  <dt>covariates</dt><dd><p>tibble of covariate variables (columns) per year (rows)</p></dd>
+  <dt>metadata</dt><dd><p>metadata list</p></dd>
+
+</dl>
+
+
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
