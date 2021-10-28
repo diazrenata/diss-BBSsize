@@ -344,8 +344,8 @@ species_id,id,english_common_name,french_common_name,spanish_common_name,sporder
 941,sp6220,Loggerhead Shrike,Pie-grièche migratrice,Lanius ludovicianus,Passeriformes,Laniidae,Lanius,ludovicianus,47.7,3.5,NA,NA,"Florida, USA",NA,NA,NA,NA,NA,NA,NA
 941,sp6220,Loggerhead Shrike,Pie-grièche migratrice,Lanius ludovicianus,Passeriformes,Laniidae,Lanius,ludovicianus,55.8,0.3,NA,NA,"Alberta, Canada",NA,NA,NA,NA,NA,NA,NA
 942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,60.4,3.3,NA,NA,Israel,1,Lanius excubitor,NA,NA,NA,NA,NA
-942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,63.4,3.3,NA,excubitor borealis,Eastern USA,1,Lanius excubitor borealis,NA,NA,NA,NA,NA
 942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,63.4,6,NA,excubitor excubitor,Europe,1,Lanius excubitor excubitor,NA,NA,NA,NA,NA
+942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,63.4,3.3,NA,excubitor borealis,Eastern USA,1,Lanius excubitor borealis,NA,NA,NA,NA,NA
 942,sp6210,Northern Shrike,Pie-grièche boréale,Lanius borealis,Passeriformes,Laniidae,Lanius,borealis,66.6,4.6,NA,excubitor borealis,Western USA,1,Lanius excubitor borealis,NA,NA,NA,NA,NA
 950,sp6300,Black-capped Vireo,Viréo à tête noire,Vireo atricapilla,Passeriformes,Vireonidae,Vireo,atricapilla,8.8,0.4,f,NA,"Oklahoma & Texas, USA",NA,NA,NA,NA,NA,NA,NA
 950,sp6300,Black-capped Vireo,Viréo à tête noire,Vireo atricapilla,Passeriformes,Vireonidae,Vireo,atricapilla,9.2,0.4,m,NA,"Oklahoma & Texas, USA",NA,NA,NA,NA,NA,NA,NA

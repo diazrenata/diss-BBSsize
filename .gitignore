@@ -4,3 +4,4 @@
 .drake
 .drake\*
 *isd_data*
+.DS_Store
