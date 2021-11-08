@@ -97,13 +97,19 @@ simulate_isd_ts <- function(dataset, sd_dat = NULL, censusyears = NULL, use_th_p
     thisyear_abunds <- dplyr::filter(abundances_long,
                                      year == unique(abundances_long$year)[i])
 
-    annual_isds[[i]] <- simulate_isd(abundances = thisyear_abunds,
-                                    sd_dat = sd_dat,
-                                    use_th_pars = use_th_pars,
-                                    isd_seed = initial_isd_seed + i)
+    if(sum(thisyear_abunds$abundance) == 0) {
 
+      annual_isds[[i]] <- NA
+    } else {
+
+      annual_isds[[i]] <- simulate_isd(abundances = thisyear_abunds,
+                                       sd_dat = sd_dat,
+                                       use_th_pars = use_th_pars,
+                                       isd_seed = initial_isd_seed + i)
+    }
   }
 
+  annual_isds <- (annual_isds)[ which(!is.na(annual_isds))]
   all_annual_isds <- dplyr::bind_rows(annual_isds) %>%
     dplyr::mutate(isd_seed = initial_isd_seed)
 
