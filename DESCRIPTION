@@ -1,11 +1,11 @@
-Package: BBSsize
+Package: dissBBSsize
 Title: Simulate body masses for BBS routes.
 Version: 0.0.0.9000
 Authors@R: c(
     person(c("Renata", "M."), "Diaz",
         email = "renata.diaz@weecology.org", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0803-4734")))
 Maintainer: Renata Diaz <renata.diaz@weecology.org>
-Description: Simulates ISD for BBS data.
+Description: Simulates ISD for BBS data. For dissertation.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -24,6 +24,6 @@ Suggests:
     testthat
 Remotes: 
     weecology/MATSS
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Simulate ISD data for a timeseries — simulate_isd_ts • dissBBSsize</title>
+<title>Granby BBS route. — granby • dissBBSsize</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Simulate ISD data for a timeseries — simulate_isd_ts" />
-<meta property="og:description" content="For one year or all years." />
+<meta property="og:title" content="Granby BBS route. — granby" />
+<meta property="og:description" content="As loaded from MATSS (`get_bbs_route_region_data`). See MATSS for full documentation." />
 
 
 
@@ -103,51 +103,27 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Simulate ISD data for a timeseries</h1>
+    <h1>Granby BBS route.</h1>
     
-    <div class="hidden name"><code>simulate_isd_ts.Rd</code></div>
+    <div class="hidden name"><code>granby.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>For one year or all years.</p>
+    <p>As loaded from MATSS (`get_bbs_route_region_data`). See MATSS for full documentation.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>simulate_isd_ts</span><span class='op'>(</span>
-  <span class='va'>dataset</span>,
-  sd_dat <span class='op'>=</span> <span class='cn'>NULL</span>,
-  censusyears <span class='op'>=</span> <span class='cn'>NULL</span>,
-  use_th_pars <span class='op'>=</span> <span class='cn'>F</span>,
-  isd_seed <span class='op'>=</span> <span class='cn'>NULL</span>
-<span class='op'>)</span></pre>
+    <pre class="usage"><span class='va'>granby</span></pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>dataset</th>
-      <td><p>list of `abundance`, `covariates`, `metadata`. See `MATSS`.</p></td>
-    </tr>
-    <tr>
-      <th>sd_dat</th>
-      <td><p>optional, provide a dataframe with `id`, `mean_mass`, `mean_sd`</p></td>
-    </tr>
-    <tr>
-      <th>censusyears</th>
-      <td><p>optional, specify the year to simulate for. If not provided simulates for all years.</p></td>
-    </tr>
-    <tr>
-      <th>use_th_pars</th>
-      <td><p>default F, use Thibault (2010) scaling parameters or re-estimated ones?</p></td>
-    </tr>
-    <tr>
-      <th>isd_seed</th>
-      <td><p>optionally specify the seed to use when simulating the ISDs. If not provided one will be chosen and returned with output.</p></td>
-    </tr>
-    </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>list of `isd`, `covariates`, `metadata`</p>
+    <p>A MATSS dataset.</p><dl>
+  <dt>abundance</dt><dd><p>tibble of species abundances (columns) per year (rows)</p></dd>
+  <dt>covariates</dt><dd><p>tibble of covariate variables (columns) per year (rows)</p></dd>
+  <dt>metadata</dt><dd><p>metadata list</p></dd>
+
+</dl>
+
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
