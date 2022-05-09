@@ -4,7 +4,13 @@
 \alias{simulate_isd}
 \title{Simulate an ISD for a single year}
 \usage{
-simulate_isd(abundances, sd_dat = NULL, use_th_pars = F, isd_seed = NULL)
+simulate_isd(
+  abundances,
+  sd_dat = NULL,
+  use_th_pars = F,
+  isd_seed = NULL,
+  use_sp_means = FALSE
+)
 }
 \arguments{
 \item{abundances}{long dataframe of `id`, `abundance`, and any other identifying columns (such as `year`)}
@@ -14,6 +20,8 @@ simulate_isd(abundances, sd_dat = NULL, use_th_pars = F, isd_seed = NULL)
 \item{use_th_pars}{default FALSE, use Thibault (2010) parameter estiamtes?}
 
 \item{isd_seed}{optionally specify seed to use}
+
+\item{use_sp_means}{default FALSE, use species' mean body sizes and no intraspecific variation (sd of 0)}
 }
 \value{
 dataframe with one row per simulated individual, columns `id`, `mass`, `isd_seed`, and any columns in `abundances`

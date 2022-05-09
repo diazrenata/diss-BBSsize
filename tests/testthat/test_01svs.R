@@ -16,6 +16,12 @@ test_that("single year works", {
 
 })
 
+test_that("single year deterministic works", {
+
+  h_94_means <- simulate_isd_ts(h, censusyears = 1994, isd_seed = 1997, use_sp_means = TRUE)
+
+})
+
 test_that("isds reproduce", {
 
 h_isd <- simulate_isd_ts(h, isd_seed = 2021)

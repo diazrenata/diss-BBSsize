@@ -6,12 +6,13 @@
 #' @param sd_dat optionally pass table with `id`, `mean_mass`, `mean_sd`
 #' @param use_th_pars default FALSE, use Thibault (2010) parameter estiamtes?
 #' @param isd_seed optionally specify seed to use
+#' @param use_sp_means default FALSE, use species' mean body sizes and no intraspecific variation (sd of 0)
 #'
 #' @return dataframe with one row per simulated individual, columns `id`, `mass`, `isd_seed`, and any columns in `abundances`
 #' @export
 #'
 #' @importFrom dplyr select distinct mutate left_join bind_rows
-simulate_isd <- function(abundances, sd_dat = NULL, use_th_pars = F, isd_seed = NULL) {
+simulate_isd <- function(abundances, sd_dat = NULL, use_th_pars = F, isd_seed = NULL, use_sp_means = FALSE) {
 
   if(is.null(isd_seed)) {
     isd_seed = sample.int(100000000, size = 1)
@@ -35,23 +36,39 @@ simulate_isd <- function(abundances, sd_dat = NULL, use_th_pars = F, isd_seed = 
 
   set.seed(isd_seed)
 
-  for(i in 1:nrow(abundances)) {
-    if(abundances$abundance[i] > 0 ) {
-      species_sims[[i]] <- data.frame(
-        id = abundances$id[i],
-        mass = rnorm(n = abundances$abundance[i], mean = abundances$mean_mass[i], sd = abundances$mean_sd[i]),
-        stringsAsFactors = F)
+  if(!use_sp_means) {
 
-      while(any(species_sims[[i]]$mass < 0)) {
+    for(i in 1:nrow(abundances)) {
+      if(abundances$abundance[i] > 0 ) {
+        species_sims[[i]] <- data.frame(
+          id = abundances$id[i],
+          mass = rnorm(n = abundances$abundance[i], mean = abundances$mean_mass[i], sd = abundances$mean_sd[i]),
+          stringsAsFactors = F)
 
-        negative_sizes <- which(species_sims[[i]]$mass < 0)
+        while(any(species_sims[[i]]$mass < 0)) {
 
-        species_sims[[i]]$mass[negative_sizes] <-  rnorm(n = length(negative_sizes), mean = abundances$mean_mass[i], sd = abundances$mean_sd[i])
+          negative_sizes <- which(species_sims[[i]]$mass < 0)
+
+          species_sims[[i]]$mass[negative_sizes] <-  rnorm(n = length(negative_sizes), mean = abundances$mean_mass[i], sd = abundances$mean_sd[i])
+
+        }
 
       }
+    }
 
+  } else {
+
+    for(i in 1:nrow(abundances)) {
+      if(abundances$abundance[i] > 0 ) {
+        species_sims[[i]] <- data.frame(
+          id = abundances$id[i],
+          mass = rep(abundances$mean_mass[i], times =  abundances$abundance[i]),
+          stringsAsFactors = F)
+
+      }
     }
   }
+
 
   simulated_individuals <- dplyr::bind_rows(species_sims) %>%
     cbind(desc_data)
@@ -68,13 +85,14 @@ simulate_isd <- function(abundances, sd_dat = NULL, use_th_pars = F, isd_seed = 
 #' @param censusyears optional, specify the year to simulate for. If not provided simulates for all years.
 #' @param use_th_pars default F, use Thibault (2010) scaling parameters or re-estimated ones?
 #' @param isd_seed optionally specify the seed to use when simulating the ISDs. If not provided one will be chosen and returned with output.
+#' @param use_sp_means default F, use means with 0 sd
 #'
 #' @return list of `isd`, `covariates`, `metadata`
 #' @export
 #'
 #' @importFrom dplyr mutate filter bind_rows
 #' @importFrom tidyr pivot_longer
-simulate_isd_ts <- function(dataset, sd_dat = NULL, censusyears = NULL, use_th_pars = F, isd_seed = NULL) {
+simulate_isd_ts <- function(dataset, sd_dat = NULL, censusyears = NULL, use_th_pars = F, isd_seed = NULL, use_sp_means= F) {
 
   if(is.null(sd_dat)) {
     sd_dat = sd_table
@@ -105,7 +123,8 @@ simulate_isd_ts <- function(dataset, sd_dat = NULL, censusyears = NULL, use_th_p
       annual_isds[[i]] <- simulate_isd(abundances = thisyear_abunds,
                                        sd_dat = sd_dat,
                                        use_th_pars = use_th_pars,
-                                       isd_seed = initial_isd_seed + i)
+                                       isd_seed = initial_isd_seed + i,
+                                       use_sp_means = use_sp_means)
     }
   }
 

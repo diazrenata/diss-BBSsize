@@ -9,7 +9,8 @@ simulate_isd_ts(
   sd_dat = NULL,
   censusyears = NULL,
   use_th_pars = F,
-  isd_seed = NULL
+  isd_seed = NULL,
+  use_sp_means = F
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ simulate_isd_ts(
 \item{use_th_pars}{default F, use Thibault (2010) scaling parameters or re-estimated ones?}
 
 \item{isd_seed}{optionally specify the seed to use when simulating the ISDs. If not provided one will be chosen and returned with output.}
+
+\item{use_sp_means}{default F, use means with 0 sd}
 }
 \value{
 list of `isd`, `covariates`, `metadata`
